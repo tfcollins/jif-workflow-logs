@@ -1,0 +1,677 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+[    0.000000] Linux version 5.10.0-98103-g2aa7ac113716 (jenkins@romlxbuild1.adlk.analog.com) (aarch64-xilinx-linux-gcc.real (GCC) 10.2.0, GNU ld (GNU Binutils) 2.35.0.20200730) #5577 SMP Wed Mar 23 07:28:49 GMT 2022
+[    0.000000] Machine model: ZynqMP ZCU102 Rev1.0
+[    0.000000] earlycon: cdns0 at MMIO 0x00000000ff000000 (options '115200n8')
+[    0.000000] printk: bootconsole [cdns0] enabled
+[    0.000000] efi: UEFI not found.
+[    0.000000] cma: Reserved 256 MiB at 0x0000000070000000
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000000000-0x000000003fffffff]
+[    0.000000]   DMA32    [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000087fffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000007fffffff]
+[    0.000000]   node   0: [mem 0x0000000800000000-0x000000087fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000087fffffff]
+[    0.000000] On node 0 totalpages: 1048576
+[    0.000000]   DMA zone: 3584 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 262144 pages, LIFO batch:63
+[    0.000000]   DMA32 zone: 3584 pages used for memmap
+[    0.000000]   DMA32 zone: 262144 pages, LIFO batch:63
+[    0.000000]   Normal zone: 7168 pages used for memmap
+[    0.000000]   Normal zone: 524288 pages, LIFO batch:63
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.2
+[    0.000000] percpu: Embedded 22 pages/cpu s49496 r8192 d32424 u90112
+[    0.000000] pcpu-alloc: s49496 r8192 d32424 u90112 alloc=22*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: ARM erratum 845719
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 1034240
+[    0.000000] Kernel command line: console=ttyPS0,115200 root=/dev/mmcblk0p2 rw earlycon rootfstype=ext4 rootwait clk_ignore_unused cpuidle.off=1 root=/dev/mmcblk0p2 rw rootwait
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] software IO TLB: mapped [mem 0x000000003bfff000-0x000000003ffff000] (64MB)
+[    0.000000] Memory: 3761904K/4194304K available (15296K kernel code, 1636K rwdata, 11876K rodata, 2560K init, 507K bss, 170256K reserved, 262144K cma-reserved)
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GIC: Adjusting CPU interface base to 0x00000000f902f000
+[    0.000000] GIC: Using split EOI/Deactivate mode
+[    0.000000] random: get_random_bytes called from start_kernel+0x31c/0x54c with crng_init=0
+[    0.000000] arch_timer: cp15 timer(s) running at 100.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x171024e7e0, max_idle_ns: 440795205315 ns
+[    0.000003] sched_clock: 56 bits at 100MHz, resolution 10ns, wraps every 4398046511100ns
+[    0.008462] Console: colour dummy device 80x25
+[    0.012483] Calibrating delay loop (skipped), value calculated using timer frequency.. 200.00 BogoMIPS (lpj=400000)
+[    0.022841] pid_max: default: 32768 minimum: 301
+[    0.027551] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.034788] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.043394] rcu: Hierarchical SRCU implementation.
+[    0.047559] EFI services will not be available.
+[    0.051939] smp: Bringing up secondary CPUs ...
+[    0.056655] Detected VIPT I-cache on CPU1
+[    0.056694] CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+[    0.057059] Detected VIPT I-cache on CPU2
+[    0.057083] CPU2: Booted secondary processor 0x0000000002 [0x410fd034]
+[    0.057422] Detected VIPT I-cache on CPU3
+[    0.057445] CPU3: Booted secondary processor 0x0000000003 [0x410fd034]
+[    0.057491] smp: Brought up 1 node, 4 CPUs
+[    0.091780] SMP: Total of 4 processors activated.
+[    0.096452] CPU features: detected: 32-bit EL0 Support
+[    0.101556] CPU features: detected: CRC32 instructions
+[    0.106696] CPU: All CPU(s) started at EL2
+[    0.110736] alternatives: patching kernel code
+[    0.116168] devtmpfs: initialized
+[    0.124060] Registered cp15_barrier emulation handler
+[    0.124112] Registered setend emulation handler
+[    0.128091] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.137670] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)
+[    0.151022] pinctrl core: initialized pinctrl subsystem
+[    0.151671] NET: Registered protocol family 16
+[    0.156093] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+[    0.162108] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.169832] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.177636] audit: initializing netlink subsys (disabled)
+[    0.183088] audit: type=2000 audit(0.116:1): state=initialized audit_enabled=0 res=1
+[    0.183431] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.197464] ASID allocator initialised with 65536 entries
+[    0.224346] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.225403] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.232074] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.238738] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+[    1.304327] DRBG: Continuing without Jitter RNG
+[    1.382127] raid6: neonx8   gen()  2142 MB/s
+[    1.450181] raid6: neonx8   xor()  1599 MB/s
+[    1.518235] raid6: neonx4   gen()  2195 MB/s
+[    1.586289] raid6: neonx4   xor()  1564 MB/s
+[    1.654350] raid6: neonx2   gen()  2076 MB/s
+[    1.722402] raid6: neonx2   xor()  1441 MB/s
+[    1.790475] raid6: neonx1   gen()  1772 MB/s
+[    1.858513] raid6: neonx1   xor()  1220 MB/s
+[    1.926571] raid6: int64x8  gen()  1438 MB/s
+[    1.994627] raid6: int64x8  xor()   771 MB/s
+[    2.062692] raid6: int64x4  gen()  1599 MB/s
+[    2.130750] raid6: int64x4  xor()   819 MB/s
+[    2.198821] raid6: int64x2  gen()  1397 MB/s
+[    2.266863] raid6: int64x2  xor()   750 MB/s
+[    2.334953] raid6: int64x1  gen()  1034 MB/s
+[    2.403001] raid6: int64x1  xor()   517 MB/s
+[    2.403040] raid6: using algorithm neonx4 gen() 2195 MB/s
+[    2.406996] raid6: .... xor() 1564 MB/s, rmw enabled
+[    2.411926] raid6: using neon recovery algorithm
+[    2.416937] iommu: Default domain type: Translated 
+[    2.421551] SCSI subsystem initialized
+[    2.425095] libata version 3.00 loaded.
+[    2.425219] usbcore: registered new interface driver usbfs
+[    2.430552] usbcore: registered new interface driver hub
+[    2.435825] usbcore: registered new device driver usb
+[    2.440957] mc: Linux media interface: v0.10
+[    2.445075] videodev: Linux video capture interface: v2.00
+[    2.450566] EDAC MC: Ver: 3.0.0
+[    2.454006] zynqmp-ipi-mbox mailbox@ff990400: Registered ZynqMP IPI mbox with TX/RX channels.
+[    2.462511] jesd204: created con: id=0, topo=0, link=0, /axi/spi@ff050000/hmc7044@0 <-> /fpga-axi@0/axi-adxcvr-tx@84b60000
+[    2.473094] jesd204: created con: id=1, topo=0, link=2, /axi/spi@ff050000/hmc7044@0 <-> /fpga-axi@0/axi-adxcvr-rx@84a60000
+[    2.484079] jesd204: created con: id=2, topo=0, link=0, /fpga-axi@0/axi-adxcvr-tx@84b60000 <-> /fpga-axi@0/axi-jesd204-tx@84b90000
+[    2.495754] jesd204: created con: id=3, topo=0, link=2, /fpga-axi@0/axi-adxcvr-rx@84a60000 <-> /fpga-axi@0/axi-jesd204-rx@84a90000
+[    2.507432] jesd204: created con: id=4, topo=0, link=0, /fpga-axi@0/axi-jesd204-tx@84b90000 <-> /fpga-axi@0/axi-ad9081-tx-hpc@84b10000
+[    2.519459] jesd204: created con: id=5, topo=0, link=2, /fpga-axi@0/axi-jesd204-rx@84a90000 <-> /fpga-axi@0/axi-ad9081-rx-hpc@84a10000
+[    2.531482] jesd204: created con: id=6, topo=0, link=2, /fpga-axi@0/axi-ad9081-rx-hpc@84a10000 <-> /axi/spi@ff040000/ad9081@0
+[    2.542723] jesd204: created con: id=7, topo=0, link=0, /fpga-axi@0/axi-ad9081-tx-hpc@84b10000 <-> /axi/spi@ff040000/ad9081@0
+[    2.553973] jesd204: /axi/spi@ff040000/ad9081@0: JESD204[2] transition uninitialized -> initialized
+[    2.562960] jesd204: /axi/spi@ff040000/ad9081@0: JESD204[0] transition uninitialized -> initialized
+[    2.571951] jesd204: found 8 devices and 1 topologies
+[    2.576995] FPGA manager framework
+[    2.580474] Advanced Linux Sound Architecture Driver Initialized.
+[    2.586767] Bluetooth: Core ver 2.22
+[    2.589955] NET: Registered protocol family 31
+[    2.594355] Bluetooth: HCI device and connection manager initialized
+[    2.600672] Bluetooth: HCI socket layer initialized
+[    2.605514] Bluetooth: L2CAP socket layer initialized
+[    2.610538] Bluetooth: SCO socket layer initialized
+[    2.615723] clocksource: Switched to clocksource arch_sys_counter
+[    2.621531] VFS: Disk quotas dquot_6.6.0
+[    2.625367] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    2.636077] NET: Registered protocol family 2
+[    2.636811] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    2.645005] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    2.653031] TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+[    2.660476] TCP: Hash tables configured (established 32768 bind 32768)
+[    2.666650] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    2.673316] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    2.680477] NET: Registered protocol family 1
+[    2.684929] RPC: Registered named UNIX socket transport module.
+[    2.690553] RPC: Registered udp transport module.
+[    2.695217] RPC: Registered tcp transport module.
+[    2.699887] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    2.706878] PCI: CLS 0 bytes, default 64
+[    2.710585] hw perfevents: no interrupt-affinity property for /pmu, guessing.
+[    2.717438] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    2.725792] Initialise system trusted keyrings
+[    2.729467] workingset: timestamp_bits=62 max_order=20 bucket_order=0
+[    2.736367] NFS: Registering the id_resolver key type
+[    2.740816] Key type id_resolver registered
+[    2.744955] Key type id_legacy registered
+[    2.748944] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    2.755610] jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[    2.798717] NET: Registered protocol family 38
+[    2.798760] xor: measuring software checksum speed
+[    2.806444]    8regs           :  2363 MB/sec
+[    2.810113]    32regs          :  2799 MB/sec
+[    2.815057]    arm64_neon      :  2379 MB/sec
+[    2.815245] xor: using function: 32regs (2799 MB/sec)
+[    2.820271] Key type asymmetric registered
+[    2.824332] Asymmetric key parser 'x509' registered
+[    2.829193] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[    2.836530] io scheduler mq-deadline registered
+[    2.841027] io scheduler kyber registered
+[    2.870442] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    2.875078] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    2.881421] brd: module loaded
+[    2.885567] loop: module loaded
+[    2.886112] Registered mathworks_ip class
+[    2.889455] libphy: Fixed MDIO Bus: probed
+[    2.892433] tun: Universal TUN/TAP device driver, 1.6
+[    2.896490] CAN device driver interface
+[    2.901027] usbcore: registered new interface driver asix
+[    2.905621] usbcore: registered new interface driver ax88179_178a
+[    2.911657] usbcore: registered new interface driver cdc_ether
+[    2.917451] usbcore: registered new interface driver net1080
+[    2.923076] usbcore: registered new interface driver cdc_subset
+[    2.928957] usbcore: registered new interface driver zaurus
+[    2.934501] usbcore: registered new interface driver cdc_ncm
+[    2.940902] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    2.946586] ehci-pci: EHCI PCI platform driver
+[    2.951383] usbcore: registered new interface driver uas
+[    2.956301] usbcore: registered new interface driver usb-storage
+[    2.962289] usbcore: registered new interface driver usbserial_generic
+[    2.968740] usbserial: USB Serial support registered for generic
+[    2.974713] usbcore: registered new interface driver ftdi_sio
+[    2.980417] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    2.987693] usbcore: registered new interface driver upd78f0730
+[    2.993564] usbserial: USB Serial support registered for upd78f0730
+[    3.001217] rtc_zynqmp ffa60000.rtc: registered as rtc0
+[    3.004990] rtc_zynqmp ffa60000.rtc: setting system clock to 2022-03-26T03:34:51 UTC (1648265691)
+[    3.013852] i2c /dev entries driver
+[    3.019157] usbcore: registered new interface driver uvcvideo
+[    3.022965] USB Video Class driver (1.1.1)
+[    3.028544] Bluetooth: HCI UART driver ver 2.3
+[    3.031436] Bluetooth: HCI UART protocol H4 registered
+[    3.036546] Bluetooth: HCI UART protocol BCSP registered
+[    3.041835] Bluetooth: HCI UART protocol LL registered
+[    3.046923] Bluetooth: HCI UART protocol ATH3K registered
+[    3.052297] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[    3.058553] Bluetooth: HCI UART protocol Intel registered
+[    3.063891] Bluetooth: HCI UART protocol QCA registered
+[    3.069092] usbcore: registered new interface driver bcm203x
+[    3.074713] usbcore: registered new interface driver bpa10x
+[    3.080248] usbcore: registered new interface driver bfusb
+[    3.085699] usbcore: registered new interface driver btusb
+[    3.091163] usbcore: registered new interface driver ath3k
+[    3.096644] EDAC MC: ECC not enabled
+[    3.100271] EDAC DEVICE0: Giving out device to module zynqmp-ocm-edac controller zynqmp_ocm: DEV ff960000.memory-controller (INTERRUPT)
+[    3.112586] sdhci: Secure Digital Host Controller Interface driver
+[    3.118373] sdhci: Copyright(c) Pierre Ossman
+[    3.122698] sdhci-pltfm: SDHCI platform and OF driver helper
+[    3.128751] ledtrig-cpu: registered to indicate activity on CPUs
+[    3.134302] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    3.140728] zynqmp_firmware_probe Platform Management API v1.1
+[    3.146488] zynqmp_firmware_probe Trustzone version v1.0
+[    3.186043] zynqmp-pinctrl firmware:zynqmp-firmware:pinctrl: zynqmp pinctrl initialized
+[    3.234054] zynqmp-aes firmware:zynqmp-firmware:zynqmp-aes: will run requests pump with realtime priority
+[    3.249901] alg: No test for xilinx-keccak-384 (zynqmp-keccak-384)
+[    3.250614] alg: No test for xilinx-zynqmp-rsa (zynqmp-rsa)
+[    3.256125] usbcore: registered new interface driver usbhid
+[    3.261516] usbhid: USB HID core driver
+[    3.272760] axi_sysid 85000000.axi-sysid-0: AXI System ID core version (1.01.a) found
+[    3.275113] axi_sysid 85000000.axi-sysid-0: [ad9081_fmca_ebz] on [zcu102] git branch <master> git <084d44c9780640ca93fd847b1d9ec70dd65f5c67> clean [2022-03-18 04:17:50] UTC
+[    3.290797] fpga_manager fpga0: Xilinx ZynqMP FPGA Manager registered
+[    3.297157] usbcore: registered new interface driver snd-usb-audio
+[    3.304607] pktgen: Packet Generator for packet performance testing. Version: 2.75
+[    3.310787] Initializing XFRM netlink socket
+[    3.314645] NET: Registered protocol family 10
+[    3.319361] Segment Routing with IPv6
+[    3.322745] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    3.328813] NET: Registered protocol family 17
+[    3.332917] NET: Registered protocol family 15
+[    3.337412] can: controller area network core
+[    3.341667] NET: Registered protocol family 29
+[    3.346055] can: raw protocol
+[    3.348991] can: broadcast manager protocol
+[    3.353147] can: netlink gateway - max_hops=1
+[    3.357539] Bluetooth: RFCOMM TTY layer initialized
+[    3.362320] Bluetooth: RFCOMM socket layer initialized
+[    3.367430] Bluetooth: RFCOMM ver 1.11
+[    3.371139] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    3.376410] Bluetooth: BNEP filters: protocol multicast
+[    3.381604] Bluetooth: BNEP socket layer initialized
+[    3.386531] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    3.392414] Bluetooth: HIDP socket layer initialized
+[    3.397472] 9pnet: Installing 9P2000 support
+[    3.401592] NET: Registered protocol family 36
+[    3.406008] Key type dns_resolver registered
+[    3.410438] registered taskstats version 1
+[    3.414305] Loading compiled-in X.509 certificates
+[    3.419418] Btrfs loaded, crc32c=crc32c-generic
+[    3.431831] ff000000.serial: ttyPS0 at MMIO 0xff000000 (irq = 49, base_baud = 6249999) is a xuartps
+[    3.440856] printk: console [ttyPS0] enabled
+[    3.445152] printk: bootconsole [cdns0] disabled
+[    3.454783] ff010000.serial: ttyPS1 at MMIO 0xff010000 (irq = 50, base_baud = 6249999) is a xuartps
+[    3.468035] of-fpga-region fpga-full: FPGA Region probed
+[    3.474979] nwl-pcie fd0e0000.pcie: host bridge /axi/pcie@fd0e0000 ranges:
+[    3.481872] nwl-pcie fd0e0000.pcie:      MEM 0x00e0000000..0x00efffffff -> 0x00e0000000
+[    3.489881] nwl-pcie fd0e0000.pcie:      MEM 0x0600000000..0x07ffffffff -> 0x0600000000
+[    3.497945] nwl-pcie fd0e0000.pcie: Link is DOWN
+[    3.502702] nwl-pcie fd0e0000.pcie: PCI host bridge to bus 0000:00
+[    3.508880] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    3.514361] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xefffffff]
+[    3.521231] pci_bus 0000:00: root bus resource [mem 0x600000000-0x7ffffffff pref]
+[    3.528734] pci 0000:00:00.0: [10ee:d021] type 01 class 0x060400
+[    3.534792] pci 0000:00:00.0: PME# supported from D0 D1 D2 D3hot
+[    3.545233] pci 0000:00:00.0: PCI bridge to [bus 01-0c]
+[    3.551209] xilinx-zynqmp-dma fd500000.dma: ZynqMP DMA driver Probe success
+[    3.558380] xilinx-zynqmp-dma fd510000.dma: ZynqMP DMA driver Probe success
+[    3.565556] xilinx-zynqmp-dma fd520000.dma: ZynqMP DMA driver Probe success
+[    3.572723] xilinx-zynqmp-dma fd530000.dma: ZynqMP DMA driver Probe success
+[    3.579895] xilinx-zynqmp-dma fd540000.dma: ZynqMP DMA driver Probe success
+[    3.587059] xilinx-zynqmp-dma fd550000.dma: ZynqMP DMA driver Probe success
+[    3.594230] xilinx-zynqmp-dma fd560000.dma: ZynqMP DMA driver Probe success
+[    3.601400] xilinx-zynqmp-dma fd570000.dma: ZynqMP DMA driver Probe success
+[    3.608795] xilinx-zynqmp-dpdma fd4c0000.dma-controller: Xilinx DPDMA engine is probed
+[    3.617349] ahci-ceva fd0c0000.ahci: supply ahci not found, using dummy regulator
+[    3.624886] ahci-ceva fd0c0000.ahci: supply phy not found, using dummy regulator
+[    3.715892] hmc7044 spi2.0: PLL1: Acquisition, CLKIN0 @ 122880000 Hz, PFD: 80 kHz - PLL2: Locked @ 2454.000000 MHz
+[    3.726612] jesd204: /axi/spi@ff050000/hmc7044@0,jesd204:1,parent=spi2.0: Using as SYSREF provider
+[    3.736199] spi-nor spi0.0: SPI-NOR-UniqueID 100000235394732200270025081115266e
+[    3.743509] spi-nor spi0.0: found n25q512a, expected m25p80
+[    3.749710] spi-nor spi0.0: trying to lock already unlocked area
+[    3.755716] spi-nor spi0.0: n25q512a (131072 Kbytes)
+[    3.760694] 4 fixed-partitions partitions found on MTD device spi0.0
+[    3.767043] Creating 4 MTD partitions on "spi0.0":
+[    3.771828] 0x000000000000-0x000000100000 : "qspi-fsbl-uboot"
+[    3.778317] 0x000000100000-0x000000600000 : "qspi-linux"
+[    3.784275] 0x000000600000-0x000000620000 : "qspi-device-tree"
+[    3.790746] 0x000000620000-0x000000c00000 : "qspi-rootfs"
+[    3.799221] macb ff0e0000.ethernet: Not enabling partial store and forward
+[    3.806745] libphy: MACB_mii_bus: probed
+[    3.811823] macb ff0e0000.ethernet eth0: Cadence GEM rev 0x50070106 at 0xff0e0000 irq 30 (00:0a:35:04:8e:1b)
+[    3.822028] xilinx-axipmon ffa00000.perf-monitor: Probed Xilinx APM
+[    3.828606] xilinx-axipmon fd0b0000.perf-monitor: Probed Xilinx APM
+[    3.835126] xilinx-axipmon fd490000.perf-monitor: Probed Xilinx APM
+[    3.841664] xilinx-axipmon ffa10000.perf-monitor: Probed Xilinx APM
+[    3.851659] pca953x 0-0020: supply vcc not found, using dummy regulator
+[    3.858344] pca953x 0-0020: using no AI
+[    3.862833] gpio-496 (sel0): hogged as output/low
+[    3.867735] gpio-497 (sel1): hogged as output/high
+[    3.872723] gpio-498 (sel2): hogged as output/high
+[    3.877707] gpio-499 (sel3): hogged as output/high
+[    3.882881] pca953x 0-0021: supply vcc not found, using dummy regulator
+[    3.889553] pca953x 0-0021: using no AI
+[    3.895319] ina2xx 2-0040: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.902350] ina2xx 2-0041: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.909385] ina2xx 2-0042: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.916415] ina2xx 2-0043: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.923440] ina2xx 2-0044: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.930458] ina2xx 2-0045: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.937491] ina2xx 2-0046: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.944570] ina2xx 2-0047: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.951601] ina2xx 2-004a: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.958643] ina2xx 2-004b: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.965051] i2c i2c-0: Added multiplexed i2c bus 2
+[    3.970438] random: fast init done
+[    3.973911] ina2xx 3-0040: power monitor ina226 (Rshunt = 2000 uOhm)
+[    3.980938] ina2xx 3-0041: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.987963] ina2xx 3-0042: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.994997] ina2xx 3-0043: power monitor ina226 (Rshunt = 5000 uOhm)
+[    4.002023] ina2xx 3-0044: power monitor ina226 (Rshunt = 5000 uOhm)
+[    4.009056] ina2xx 3-0045: power monitor ina226 (Rshunt = 5000 uOhm)
+[    4.016091] ina2xx 3-0046: power monitor ina226 (Rshunt = 5000 uOhm)
+[    4.023118] ina2xx 3-0047: power monitor ina226 (Rshunt = 5000 uOhm)
+[    4.029519] i2c i2c-0: Added multiplexed i2c bus 3
+[    4.085596] i2c i2c-0: Added multiplexed i2c bus 4
+[    4.090538] i2c i2c-0: Added multiplexed i2c bus 5
+[    4.095327] pca954x 0-0075: registered 4 multiplexed busses for I2C mux pca9544
+[    4.102676] cdns-i2c ff020000.i2c: 400 kHz mmio ff020000 irq 32
+[    4.110412] at24 6-0054: supply vcc not found, using dummy regulator
+[    4.117312] at24 6-0054: 1024 byte 24c08 EEPROM, writable, 1 bytes/write
+[    4.124065] i2c i2c-1: Added multiplexed i2c bus 6
+[    4.130495] si5341 7-0036: Chip: 5341 Grade: 1 Rev: 1
+[    4.168191] i2c i2c-1: Added multiplexed i2c bus 7
+[    4.175844] si570 8-005d: registered, current frequency 300000000 Hz
+[    4.182245] i2c i2c-1: Added multiplexed i2c bus 8
+[    4.202017] si570 9-005d: registered, current frequency 148500000 Hz
+[    4.208416] i2c i2c-1: Added multiplexed i2c bus 9
+[    4.213455] si5324 10-0069: si5328 probed
+[    4.280093] si5324 10-0069: si5328 probe successful
+[    4.285019] i2c i2c-1: Added multiplexed i2c bus 10
+[    4.290046] i2c i2c-1: Added multiplexed i2c bus 11
+[    4.295073] i2c i2c-1: Added multiplexed i2c bus 12
+[    4.300093] i2c i2c-1: Added multiplexed i2c bus 13
+[    4.304966] pca954x 1-0074: registered 8 multiplexed busses for I2C switch pca9548
+[    4.313076] at24 14-0050: supply vcc not found, using dummy regulator
+[    4.319862] at24 14-0050: 256 byte 24c02 EEPROM, writable, 1 bytes/write
+[    4.326610] i2c i2c-1: Added multiplexed i2c bus 14
+[    4.331650] i2c i2c-1: Added multiplexed i2c bus 15
+[    4.336683] i2c i2c-1: Added multiplexed i2c bus 16
+[    4.341719] i2c i2c-1: Added multiplexed i2c bus 17
+[    4.346748] i2c i2c-1: Added multiplexed i2c bus 18
+[    4.351788] i2c i2c-1: Added multiplexed i2c bus 19
+[    4.356825] i2c i2c-1: Added multiplexed i2c bus 20
+[    4.361859] i2c i2c-1: Added multiplexed i2c bus 21
+[    4.366732] pca954x 1-0075: registered 8 multiplexed busses for I2C switch pca9548
+[    4.374341] cdns-i2c ff030000.i2c: 400 kHz mmio ff030000 irq 33
+[    4.384093] cdns-wdt fd4d0000.watchdog: Xilinx Watchdog Timer with timeout 60s
+[    4.395040] axi_adxcvr 84a60000.axi-adxcvr-rx: AXI-ADXCVR-RX (17.05.a) using CPLL on GTH4 at 0x84A60000. Number of lanes: 4.
+[    4.407211] axi_adxcvr 84b60000.axi-adxcvr-tx: AXI-ADXCVR-TX (17.05.a) using QPLL on GTH4 at 0x84B60000. Number of lanes: 4.
+[    4.418833] axi-jesd204-rx 84a90000.axi-jesd204-rx: AXI-JESD204-RX (1.07.a) at 0x84A90000. Encoder 8b10b, width 4/4, lanes 4, jesd204-fsm.
+[    4.426128] mmc0: SDHCI controller on ff170000.mmc [ff170000.mmc] using ADMA 64-bit
+[    4.431677] axi-jesd204-tx 84b90000.axi-jesd204-tx: AXI-JESD204-TX (1.06.a) at 0x84B90000. Encoder 8b10b, width 4/4, lanes 4, jesd204-fsm.
+[    4.452395] zynqmp-display fd4a0000.display: vtc bridge property not present
+[    4.462053] xilinx-dp-snd-codec fd4a0000.display:zynqmp_dp_snd_codec0: Failed to get required clock freq
+[    4.471554] xilinx-dp-snd-codec: probe of fd4a0000.display:zynqmp_dp_snd_codec0 failed with error -22
+[    4.473504] mmc0: new high speed SDHC card at address 0001
+[    4.481091] xilinx-dp-snd-pcm zynqmp_dp_snd_pcm0: Xilinx DisplayPort Sound PCM probed
+[    4.486608] mmcblk0: mmc0:0001 EB1QT 29.8 GiB 
+[    4.494407] xilinx-dp-snd-pcm zynqmp_dp_snd_pcm1: Xilinx DisplayPort Sound PCM probed
+[    4.499767]  mmcblk0: p1 p2 p3
+[    4.506712] OF: graph: no port node found in /axi/display@fd4a0000
+[    4.515788] xlnx-drm xlnx-drm.0: bound fd4a0000.display (ops 0xffffffc010fcbdb8)
+[    5.599739] zynqmp-display fd4a0000.display: [drm] Cannot find any crtc or sizes
+[    5.607348] [drm] Initialized xlnx 1.0.0 20130509 for fd4a0000.display on minor 0
+[    5.614840] zynqmp-display fd4a0000.display: ZynqMP DisplayPort Subsystem driver probed
+[    5.623167] ahci-ceva fd0c0000.ahci: supply ahci not found, using dummy regulator
+[    5.630712] ahci-ceva fd0c0000.ahci: supply phy not found, using dummy regulator
+[    5.638170] ahci-ceva fd0c0000.ahci: supply target not found, using dummy regulator
+[    5.646009] ahci-ceva fd0c0000.ahci: AHCI 0001.0301 32 slots 2 ports 6 Gbps 0x3 impl platform mode
+[    5.654965] ahci-ceva fd0c0000.ahci: flags: 64bit ncq sntf pm clo only pmp fbs pio slum part ccc sds apst 
+[    5.665659] scsi host0: ahci-ceva
+[    5.669259] scsi host1: ahci-ceva
+[    5.672685] ata1: SATA max UDMA/133 mmio [mem 0xfd0c0000-0xfd0c1fff] port 0x100 irq 45
+[    5.680595] ata2: SATA max UDMA/133 mmio [mem 0xfd0c0000-0xfd0c1fff] port 0x180 irq 45
+[    5.689189] ad9081 spi1.0: supply vdd not found, using dummy regulator
+[    6.001976] ata1: SATA link down (SStatus 0 SControl 330)
+[    6.007394] ata2: SATA link down (SStatus 0 SControl 330)
+[    6.683740] zynqmp-display fd4a0000.display: [drm] Cannot find any crtc or sizes
+[    6.881219] ad9081 spi1.0: Invalid param passed., "ref_clk_hz < 100000000ULL" in adi_ad9081_device_clk_config_set(...), line554 in drivers/iio/adc/ad9081/adi_ad9081_device.c
+[    7.548606] ad9081 spi1.0: AD9081 Rev. 2 Grade 10 (API 1.2.2) probed
+[    7.555809] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    7.561300] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 1
+[    7.569049] xhci-hcd xhci-hcd.1.auto: hcc params 0x0238f625 hci version 0x100 quirks 0x0000000002010810
+[    7.578462] xhci-hcd xhci-hcd.1.auto: irq 59, io mem 0xfe200000
+[    7.584571] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+[    7.592836] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    7.600053] usb usb1: Product: xHCI Host Controller
+[    7.604922] usb usb1: Manufacturer: Linux 5.10.0-98103-g2aa7ac113716 xhci-hcd
+[    7.612048] usb usb1: SerialNumber: xhci-hcd.1.auto
+[    7.617217] hub 1-0:1.0: USB hub found
+[    7.620983] hub 1-0:1.0: 1 port detected
+[    7.625079] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    7.630559] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 2
+[    7.638214] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.0 SuperSpeed
+[    7.644844] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.10
+[    7.653100] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    7.660324] usb usb2: Product: xHCI Host Controller
+[    7.665197] usb usb2: Manufacturer: Linux 5.10.0-98103-g2aa7ac113716 xhci-hcd
+[    7.672323] usb usb2: SerialNumber: xhci-hcd.1.auto
+[    7.677430] hub 2-0:1.0: USB hub found
+[    7.681193] hub 2-0:1.0: 1 port detected
+[    7.711244] cf_axi_adc 84a10000.axi-ad9081-rx-hpc: ADI AIM (10.01.b) at 0x84A10000 mapped to 0x(____ptrval____), probed ADC AD9081 as MASTER
+[    7.744560] cf_axi_dds 84b10000.axi-ad9081-tx-hpc: Analog Devices CF_AXI_DDS_DDS MASTER (9.01.b) at 0x84B10000 mapped to 0x(____ptrval____), probed DDS AD9081
+[    7.758767] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition initialized -> probed
+[    7.769288] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition initialized -> probed
+[    7.779809] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition probed -> idle
+[    7.789719] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition probed -> idle
+[    7.799633] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> device_init
+[    7.809976] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> device_init
+[    7.820328] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> link_init
+[    7.831103] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> link_init
+[    7.841895] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> link_supported
+[    7.852933] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> link_supported
+[    7.864351] hmc7044 spi2.0: hmc7044_jesd204_link_pre_setup: Link2 forcing continuous SYSREF mode
+[    7.873291] axi-jesd204-rx 84a90000.axi-jesd204-rx: axi_jesd204_rx_jesd204_link_pre_setup: Link2 set lane rate 16360000 kHz failed (-22)
+[    7.885545] jesd204: /fpga-axi@0/axi-jesd204-rx@84a90000,jesd204:4,parent=84a90000.axi-jesd204-rx: JESD204[2] In link_pre_setup got error from cb: -22
+[    7.899016] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: Rolling back from 'link_supported', got error -22
+[    7.910067] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_pre_setup
+[    7.921540] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_pre_setup
+[    7.933017] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> link_supported
+[    7.944490] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> link_supported
+[    7.955967] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_init
+[    7.967005] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_init
+[    7.978052] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> device_init
+[    7.988831] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> device_init
+[    7.999611] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> idle
+[    8.009954] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> idle
+[    8.020305] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> idle
+[    8.030040] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> idle
+[    8.039781] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> device_init
+[    8.050125] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> device_init
+[    8.060475] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> link_init
+[    8.071257] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> link_init
+[    8.082040] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> link_supported
+[    8.093081] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> link_supported
+[    8.104309] axi-jesd204-rx 84a90000.axi-jesd204-rx: axi_jesd204_rx_jesd204_link_pre_setup: Link2 set lane rate 16360000 kHz failed (-22)
+[    8.116567] jesd204: /fpga-axi@0/axi-jesd204-rx@84a90000,jesd204:4,parent=84a90000.axi-jesd204-rx: JESD204[2] In link_pre_setup got error from cb: -22
+[    8.130034] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: Rolling back from 'link_supported', got error -22
+[    8.141078] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_pre_setup
+[    8.152552] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_pre_setup
+[    8.164027] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> link_supported
+[    8.175499] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> link_supported
+[    8.186976] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_init
+[    8.198013] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_init
+[    8.209062] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> device_init
+[    8.219836] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> device_init
+[    8.230619] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> idle
+[    8.240968] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> idle
+[    8.251315] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> idle
+[    8.261049] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> idle
+[    8.270791] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> device_init
+[    8.281134] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> device_init
+[    8.291484] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> link_init
+[    8.302261] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> link_init
+[    8.313050] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> link_supported
+[    8.324093] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> link_supported
+[    8.335280] axi-jesd204-rx 84a90000.axi-jesd204-rx: axi_jesd204_rx_jesd204_link_pre_setup: Link2 set lane rate 16360000 kHz failed (-22)
+[    8.347539] jesd204: /fpga-axi@0/axi-jesd204-rx@84a90000,jesd204:4,parent=84a90000.axi-jesd204-rx: JESD204[2] In link_pre_setup got error from cb: -22
+[    8.361009] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: Rolling back from 'link_supported', got error -22
+[    8.372057] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_pre_setup
+[    8.383533] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_pre_setup
+[    8.395010] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> link_supported
+[    8.406482] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> link_supported
+[    8.417960] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_init
+[    8.428998] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_init
+[    8.440044] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> device_init
+[    8.450822] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> device_init
+[    8.461603] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> idle
+[    8.471947] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> idle
+[    8.482297] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> idle
+[    8.492032] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> idle
+[    8.501778] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> device_init
+[    8.512119] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> device_init
+[    8.522468] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> link_init
+[    8.533245] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> link_init
+[    8.544033] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> link_supported
+[    8.555076] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> link_supported
+[    8.566262] axi-jesd204-rx 84a90000.axi-jesd204-rx: axi_jesd204_rx_jesd204_link_pre_setup: Link2 set lane rate 16360000 kHz failed (-22)
+[    8.578522] jesd204: /fpga-axi@0/axi-jesd204-rx@84a90000,jesd204:4,parent=84a90000.axi-jesd204-rx: JESD204[2] In link_pre_setup got error from cb: -22
+[    8.591992] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: Rolling back from 'link_supported', got error -22
+[    8.603035] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_pre_setup
+[    8.614506] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_pre_setup
+[    8.625989] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> link_supported
+[    8.637467] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> link_supported
+[    8.648943] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_init
+[    8.659981] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_init
+[    8.671028] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> device_init
+[    8.681803] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> device_init
+[    8.692587] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> idle
+[    8.702930] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> idle
+[    8.713277] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: FSM completed with error -22
+[    8.731697] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    8.738715] of_cfs_init
+[    8.741173] of_cfs_init: OK
+[    8.744116] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    8.882402] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    8.888931] clk: Not disabling unused clocks
+[    8.893459] ALSA device list:
+[    8.896419]   No soundcards found.
+[    8.900076] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    8.908681] cfg80211: failed to load regulatory.db
+[    8.923247] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    8.931368] VFS: Mounted root (ext4 filesystem) on device 179:2.
+[    8.944808] devtmpfs: mounted
+[    8.948620] Freeing unused kernel memory: 2560K
+[    8.963772] Run /sbin/init as init process
+[    8.967859]   with arguments:
+[    8.967862]     /sbin/init
+[    8.967864]   with environment:
+[    8.967866]     HOME=/
+[    8.967868]     TERM=linux
+[    9.533045] systemd[1]: systemd 241 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[    9.554898] systemd[1]: Detected architecture arm64.
+[    9.576433] systemd[1]: Set hostname to <analog>.
+[    9.774866] systemd[1]: File /lib/systemd/system/systemd-journald.service:12 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgroup based firewalling.
+[    9.791927] systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+[    9.955206] systemd[1]: /etc/systemd/system/tof-server.service:1: Assignment outside of section. Ignoring.
+[    9.964886] systemd[1]: /etc/systemd/system/tof-server.service:2: Assignment outside of section. Ignoring.
+[   10.148279] random: systemd: uninitialized urandom read (16 bytes read)
+[   10.162995] random: systemd: uninitialized urandom read (16 bytes read)
+[   10.169825] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[   10.191843] random: systemd: uninitialized urandom read (16 bytes read)
+[   10.198750] systemd[1]: Listening on fsck to fsckd communication Socket.
+[   10.220365] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[   10.793049] ------------[ cut here ]------------
+[   10.793056] Enabling unprepared \xa0\xe9Q\x88\xff\xff\xffpQ\x88\xff\xff\xff
+[   10.793103] WARNING: CPU: 0 PID: 113 at drivers/clk/clk.c:1012 clk_core_enable+0xa4/0xc0
+[   10.793112] Modules linked in:
+[   10.793122] CPU: 0 PID: 113 Comm: kworker/0:1H Not tainted 5.10.0-98103-g2aa7ac113716 #5577
+[   10.793125] Hardware name: ZynqMP ZCU102 Rev1.0 (DT)
+[   10.793134] Workqueue: kblockd blk_mq_run_work_fn
+[   10.793142] pstate: 80000085 (Nzcv daIf -PAN -UAO -TCO BTYPE=--)
+[   10.793148] pc : clk_core_enable+0xa4/0xc0
+[   10.793153] lr : clk_core_enable+0xa4/0xc0
+[   10.793156] sp : ffffffc0127cb2d0
+[   10.793159] x29: ffffffc0127cb2d0 x28: ffffff8800330c10 
+[   10.793166] x27: ffffff8800330d48 x26: 0000005000000101 
+[   10.793172] x25: 000000027d5f53d2 x24: 0000000000000001 
+[   10.793179] x23: ffffff88010e9380 x22: ffffff8801083220 
+[   10.793186] x21: ffffff8801517000 x20: ffffff8801517008 
+[   10.793192] x19: ffffff8801517008 x18: 0000000000000030 
+[   10.793199] x17: 0000000000000001 x16: 0000b5a4c40b9f66 
+[   10.793205] x15: ffffffffffff9d20 x14: ffffffc011d3b1a0 
+[   10.793212] x13: ffffffc011d3b1c8 x12: 0000000000000675 
+[   10.793218] x11: 0000000000000227 x10: ffffffc011d671c8 
+[   10.793224] x9 : 00000000fffff800 x8 : ffffffc011d3b1c8 
+[   10.793231] x7 : ffffffc011d671c8 x6 : 0000000000000001 
+[   10.793237] x5 : ffffff887f7669e0 x4 : 0000000000000000 
+[   10.793244] x3 : 0000000000000027 x2 : 0000000000000023 
+[   10.793250] x1 : db0bb938f573bd00 x0 : 0000000000000000 
+[   10.793257] Call trace:
+[   10.793263]  clk_core_enable+0xa4/0xc0
+[   10.793267]  clk_enable+0x2c/0x60
+[   10.793274]  zynqmp_runtime_resume+0x24/0x84
+[   10.793280]  pm_generic_runtime_resume+0x30/0x50
+[   10.793286]  __genpd_runtime_resume+0x30/0xb0
+[   10.793293]  genpd_runtime_resume+0x90/0x250
+[   10.793298]  __rpm_callback+0x10c/0x1e0
+[   10.793303]  rpm_callback+0x5c/0x84
+[   10.793308]  rpm_resume+0x4a4/0x74c
+[   10.793314]  __pm_runtime_resume+0x78/0xc4
+[   10.793318]  spi_mem_access_start.isra.0+0x30/0x80
+[   10.793322]  spi_mem_exec_op+0x3b0/0x424
+[   10.793327]  spi_nor_read_sr+0x78/0xe0
+[   10.793332]  spi_nor_wait_till_ready_with_timeout+0xb4/0x2f0
+[   10.793337]  spi_nor_read+0x188/0x380
+[   10.793342]  mtd_read_oob_std+0x78/0x84
+[   10.793346]  mtd_read_oob+0x7c/0x134
+[   10.793351]  mtd_read+0x48/0x7c
+[   10.793357]  mtdblock_readsect+0x6c/0x150
+[   10.793362]  mtd_queue_rq+0x2cc/0x5a0
+[   10.793367]  blk_mq_dispatch_rq_list+0x110/0x790
+[   10.793374]  __blk_mq_do_dispatch_sched+0x200/0x274
+[   10.793379]  __blk_mq_sched_dispatch_requests+0x1a8/0x1fc
+[   10.793385]  blk_mq_sched_dispatch_requests+0x3c/0x7c
+[   10.793390]  __blk_mq_run_hw_queue+0x98/0x100
+[   10.793394]  blk_mq_run_work_fn+0x24/0x30
+[   10.793400]  process_one_work+0x1d4/0x380
+[   10.793404]  worker_thread+0x78/0x4e0
+[   10.793409]  kthread+0x124/0x130
+[   10.793415]  ret_from_fork+0x10/0x3c
+[   10.793418] ---[ end trace 707e2ff56faa0da7 ]---
+[   10.793426] zynqmp-qspi ff0f0000.spi: Cannot enable APB clock.
+[   10.793476] spi_master spi0: Failed to power device: -108
+[   10.793486] blk_update_request: I/O error, dev mtdblock0, sector 8 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   10.793553] spi_master spi0: Failed to power device: -22
+[   10.793560] blk_update_request: I/O error, dev mtdblock0, sector 8 op 0x0:(READ) flags 0x0 phys_seg 8 prio class 0
+[   10.793566] Buffer I/O error on dev mtdblock0, logical block 8, async page read
+[   10.793575] spi_master spi0: Failed to power device: -22
+[   10.793580] blk_update_request: I/O error, dev mtdblock0, sector 9 op 0x0:(READ) flags 0x0 phys_seg 7 prio class 0
+[   10.793584] Buffer I/O error on dev mtdblock0, logical block 9, async page read
+[   10.793591] spi_master spi0: Failed to power device: -22
+[   10.793597] blk_update_request: I/O error, dev mtdblock0, sector 10 op 0x0:(READ) flags 0x0 phys_seg 6 prio class 0
+[   10.793601] Buffer I/O error on dev mtdblock0, logical block 10, async page read
+[   10.793608] spi_master spi0: Failed to power device: -22
+[   10.793613] blk_update_request: I/O error, dev mtdblock0, sector 11 op 0x0:(READ) flags 0x0 phys_seg 5 prio class 0
+[   10.793618] Buffer I/O error on dev mtdblock0, logical block 11, async page read
+[   10.793624] spi_master spi0: Failed to power device: -22
+[   10.793630] blk_update_request: I/O error, dev mtdblock0, sector 12 op 0x0:(READ) flags 0x0 phys_seg 4 prio class 0
+[   10.793634] Buffer I/O error on dev mtdblock0, logical block 12, async page read
+[   10.793641] spi_master spi0: Failed to power device: -22
+[   10.793646] blk_update_request: I/O error, dev mtdblock0, sector 13 op 0x0:(READ) flags 0x0 phys_seg 3 prio class 0
+[   10.793650] Buffer I/O error on dev mtdblock0, logical block 13, async page read
+[   10.793657] spi_master spi0: Failed to power device: -22
+[   10.793663] blk_update_request: I/O error, dev mtdblock0, sector 14 op 0x0:(READ) flags 0x0 phys_seg 2 prio class 0
+[   10.793666] Buffer I/O error on dev mtdblock0, logical block 14, async page read
+[   10.793673] spi_master spi0: Failed to power device: -22
+[   10.793679] blk_update_request: I/O error, dev mtdblock0, sector 15 op 0x0:(READ) flags 0x0 phys_seg 1 prio class 0
+[   10.793683] Buffer I/O error on dev mtdblock0, logical block 15, async page read
+[   10.794010] spi_master spi0: Failed to power device: -22
+[   10.794018] blk_update_request: I/O error, dev mtdblock1, sector 10112 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   10.794062] spi_master spi0: Failed to power device: -22
+[   10.794067] Buffer I/O error on dev mtdblock1, logical block 10112, async page read
+[   10.794075] spi_master spi0: Failed to power device: -22
+[   10.794080] Buffer I/O error on dev mtdblock1, logical block 10113, async page read
+[   10.794087] spi_master spi0: Failed to power device: -22
+[   10.794095] spi_master spi0: Failed to power device: -22
+[   10.794102] spi_master spi0: Failed to power device: -22
+[   10.794109] spi_master spi0: Failed to power device: -22
+[   10.794116] spi_master spi0: Failed to power device: -22
+[   10.794124] spi_master spi0: Failed to power device: -22
+[   10.794385] spi_master spi0: Failed to power device: -22
+[   10.794428] spi_master spi0: Failed to power device: -22
+[   10.794443] spi_master spi0: Failed to power device: -22
+[   10.794451] spi_master spi0: Failed to power device: -22
+[   10.794458] spi_master spi0: Failed to power device: -22
+[   10.794466] spi_master spi0: Failed to power device: -22
+[   10.794473] spi_master spi0: Failed to power device: -22
+[   10.794480] spi_master spi0: Failed to power device: -22
+[   10.794488] spi_master spi0: Failed to power device: -22
+[   10.794756] spi_master spi0: Failed to power device: -22
+[   10.794799] spi_master spi0: Failed to power device: -22
+[   10.794809] spi_master spi0: Failed to power device: -22
+[   10.794816] spi_master spi0: Failed to power device: -22
+[   10.794824] spi_master spi0: Failed to power device: -22
+[   10.794832] spi_master spi0: Failed to power device: -22
+[   10.794839] spi_master spi0: Failed to power device: -22
+[   10.794846] spi_master spi0: Failed to power device: -22
+[   10.794853] spi_master spi0: Failed to power device: -22
+[   10.918661] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+[   11.044602] systemd-journald[169]: Received request to flush runtime journal from PID 1
+[   16.973856] macb ff0e0000.ethernet eth0: PHY [ff0e0000.ethernet-ffffffff:0c] driver [TI DP83867] (irq=POLL)
+[   16.973869] macb ff0e0000.ethernet eth0: configuring for phy/rgmii-id link mode
+[   17.267816] Adding 66556k swap on /var/swap.  Priority:-2 extents:2 across:3253180k SS
+[   19.051745] random: crng init done
+[   19.051757] random: 7 urandom warning(s) missed due to ratelimiting
+[   20.019711] broken atomic modeset userspace detected, disabling atomic
+[   21.057339] macb ff0e0000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
+[   21.057363] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   22.703752] broken atomic modeset userspace detected, disabling atomic
+[   25.808866] broken atomic modeset userspace detected, disabling atomic
+[   28.450617] broken atomic modeset userspace detected, disabling atomic

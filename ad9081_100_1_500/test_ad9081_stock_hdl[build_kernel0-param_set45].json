@@ -1,0 +1,396 @@
+{
+    "param_set": {
+        "DAC_freq": 3480000000,
+        "ADC_freq": 1740000000,
+        "fddc": 6,
+        "cddc": 2,
+        "fduc": 6,
+        "cduc": 4
+    },
+    "status": "passed",
+    "cfg": {
+        "clock": {
+            "r2": 512,
+            "n2": 10875,
+            "out_dividers": [
+                30,
+                576,
+                576,
+                18,
+                18
+            ],
+            "output_clocks": {
+                "AD9081_ref_clk": {
+                    "rate": 87000000.0,
+                    "divider": 30
+                },
+                "adc_sysref": {
+                    "rate": 4531250.0,
+                    "divider": 576
+                },
+                "dac_sysref": {
+                    "rate": 4531250.0,
+                    "divider": 576
+                },
+                "adc_fpga_ref_clk": {
+                    "rate": 145000000.0,
+                    "divider": 18
+                },
+                "dac_fpga_ref_clk": {
+                    "rate": 145000000.0,
+                    "divider": 18
+                }
+            },
+            "vco": 2610000000,
+            "vcxo": 122880000,
+            "vcxo_doubler": 1
+        },
+        "converter": {
+            "clocking_option": "integrated_pll",
+            "pll_config": {
+                "m_vco": 5,
+                "n_vco": 16,
+                "r": 1,
+                "d": 2
+            },
+            "jesd": {
+                "bit_clock": 5800000000.0,
+                "multiframe_clock": 4531250.0,
+                "sample_clock": 145000000,
+                "F": 4,
+                "HD": 0,
+                "K": 32,
+                "L": 4,
+                "M": 8,
+                "Np": 16,
+                "S": 1,
+                "CS": 0,
+                "jesd_class": "jesd204b",
+                "converter_clock": 1740000000,
+                "jesd_mode": "10",
+                "jesd_class_int": 1
+            },
+            "datapath": {
+                "cddc": {
+                    "enabled": [
+                        true,
+                        true,
+                        true,
+                        true
+                    ],
+                    "decimations": [
+                        2,
+                        2,
+                        2,
+                        2
+                    ],
+                    "nco_frequencies": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "nco_phases": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "fddc": {
+                    "enabled": [
+                        true,
+                        true,
+                        false,
+                        false,
+                        true,
+                        true,
+                        false,
+                        false
+                    ],
+                    "decimations": [
+                        6,
+                        6,
+                        6,
+                        6,
+                        6,
+                        6,
+                        6,
+                        6
+                    ],
+                    "nco_frequencies": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "nco_phases": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "source": [
+                        1,
+                        1,
+                        2,
+                        2,
+                        3,
+                        3,
+                        4,
+                        4
+                    ]
+                }
+            }
+        },
+        "fpga_adc": {
+            "type": "qpll",
+            "m": 1,
+            "d": 2,
+            "n": 80,
+            "band": 0,
+            "vco": 11600000000.0,
+            "qty4_full_rate_enabled": 1
+        },
+        "jesd_adc": {
+            "bit_clock": 5800000000.0,
+            "multiframe_clock": 4531250.0,
+            "sample_clock": 145000000,
+            "F": 4,
+            "HD": 0,
+            "K": 32,
+            "L": 4,
+            "M": 8,
+            "Np": 16,
+            "S": 1,
+            "CS": 0,
+            "jesd_class": "jesd204b",
+            "converter_clock": 1740000000,
+            "jesd_mode": "10",
+            "jesd_class_int": 1
+        },
+        "datapath_adc": {
+            "cddc": {
+                "enabled": [
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                "decimations": [
+                    2,
+                    2,
+                    2,
+                    2
+                ],
+                "nco_frequencies": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "nco_phases": [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "fddc": {
+                "enabled": [
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false,
+                    false
+                ],
+                "decimations": [
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6,
+                    6
+                ],
+                "nco_frequencies": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "nco_phases": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "source": [
+                    1,
+                    1,
+                    2,
+                    2,
+                    3,
+                    3,
+                    4,
+                    4
+                ]
+            }
+        },
+        "fpga_dac": {
+            "type": "qpll",
+            "m": 1,
+            "d": 2,
+            "n": 80,
+            "band": 0,
+            "vco": 11600000000.0,
+            "qty4_full_rate_enabled": 1
+        },
+        "jesd_dac": {
+            "bit_clock": 5800000000.0,
+            "multiframe_clock": 4531250.0,
+            "sample_clock": 145000000,
+            "F": 4,
+            "HD": 0,
+            "K": 32,
+            "L": 4,
+            "M": 8,
+            "Np": 16,
+            "S": 1,
+            "CS": 0,
+            "jesd_class": "jesd204b",
+            "converter_clock": 3480000000,
+            "jesd_mode": "9",
+            "jesd_class_int": 1
+        },
+        "datapath_dac": {
+            "cduc": {
+                "enabled": [
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                "interpolation": 4,
+                "nco_frequencies": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "nco_phases": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "sources": [
+                    [
+                        1
+                    ],
+                    [
+                        1
+                    ],
+                    [
+                        3
+                    ],
+                    [
+                        3
+                    ]
+                ]
+            },
+            "fduc": {
+                "enabled": [
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                "interpolation": 6,
+                "nco_frequencies": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "nco_phases": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        }
+    },
+    "found_devices": [
+        "ams",
+        "hmc7044",
+        "axi-ad9081-rx-hpc",
+        "axi-ad9081-tx-hpc",
+        null
+    ],
+    "RX_0x0728": 10,
+    "RX_0x00CA": 3,
+    "TX_0x09": 0,
+    "RX_Expected_Device_Clock": 145000000.0,
+    "TX_Expected_Device_Clock": 145000000.0,
+    "jdevices_statuses": {
+        "84a90000.axi-jesd204-rx": {
+            "enabled": "enabled",
+            "Measured Link Clock": "72.510 MHz",
+            "Reported Link Clock": "72.500 MHz",
+            "Measured Device Clock": "145.018 MHz",
+            "Reported Device Clock": "145.000 MHz",
+            "Desired Device Clock": "145.000 MHz",
+            "Lane rate": "5800.000 MHz",
+            "Lane rate  40": "145.000 MHz",
+            "LMFC rate": "4.531 MHz",
+            "Link status": "DATA",
+            "SYSREF captured": "Yes",
+            "SYSREF alignment error": "No"
+        },
+        "84b90000.axi-jesd204-tx": {
+            "enabled": "enabled",
+            "Measured Link Clock": "145.016 MHz",
+            "Reported Link Clock": "145.000 MHz",
+            "Measured Device Clock": "145.016 MHz",
+            "Reported Device Clock": "145.000 MHz",
+            "Desired Device Clock": "145.000 MHz",
+            "Lane rate": "5800.000 MHz",
+            "Lane rate  40": "145.000 MHz",
+            "LMFC rate": "4.531 MHz",
+            "SYNC~": "deasserted",
+            "Link status": "DATA",
+            "SYSREF captured": "Yes",
+            "SYSREF alignment error": "No"
+        }
+    }
+}

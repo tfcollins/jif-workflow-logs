@@ -1,0 +1,758 @@
+[    2.440957] mc: Linux media interface: v0.10
+[    2.445075] videodev: Linux video capture interface: v2.00
+[    2.450565] EDAC MC: Ver: 3.0.0
+[    2.454006] zynqmp-ipi-mbox mailbox@ff990400: Registered ZynqMP IPI mbox with TX/RX channels.
+[    2.462505] jesd204: created con: id=0, topo=0, link=0, /axi/spi@ff050000/hmc7044@0 <-> /fpga-axi@0/axi-adxcvr-tx@84b60000
+[    2.473094] jesd204: created con: id=1, topo=0, link=2, /axi/spi@ff050000/hmc7044@0 <-> /fpga-axi@0/axi-adxcvr-rx@84a60000
+[    2.484078] jesd204: created con: id=2, topo=0, link=0, /fpga-axi@0/axi-adxcvr-tx@84b60000 <-> /fpga-axi@0/axi-jesd204-tx@84b90000
+[    2.495754] jesd204: created con: id=3, topo=0, link=2, /fpga-axi@0/axi-adxcvr-rx@84a60000 <-> /fpga-axi@0/axi-jesd204-rx@84a90000
+[    2.507432] jesd204: created con: id=4, topo=0, link=0, /fpga-axi@0/axi-jesd204-tx@84b90000 <-> /fpga-axi@0/axi-ad9081-tx-hpc@84b10000
+[    2.519459] jesd204: created con: id=5, topo=0, link=2, /fpga-axi@0/axi-jesd204-rx@84a90000 <-> /fpga-axi@0/axi-ad9081-rx-hpc@84a10000
+[    2.531482] jesd204: created con: id=6, topo=0, link=2, /fpga-axi@0/axi-ad9081-rx-hpc@84a10000 <-> /axi/spi@ff040000/ad9081@0
+[    2.542723] jesd204: created con: id=7, topo=0, link=0, /fpga-axi@0/axi-ad9081-tx-hpc@84b10000 <-> /axi/spi@ff040000/ad9081@0
+[    2.553974] jesd204: /axi/spi@ff040000/ad9081@0: JESD204[2] transition uninitialized -> initialized
+[    2.562960] jesd204: /axi/spi@ff040000/ad9081@0: JESD204[0] transition uninitialized -> initialized
+[    2.571951] jesd204: found 8 devices and 1 topologies
+[    2.576995] FPGA manager framework
+[    2.580474] Advanced Linux Sound Architecture Driver Initialized.
+[    2.586767] Bluetooth: Core ver 2.22
+[    2.589954] NET: Registered protocol family 31
+[    2.594356] Bluetooth: HCI device and connection manager initialized
+[    2.600672] Bluetooth: HCI socket layer initialized
+[    2.605514] Bluetooth: L2CAP socket layer initialized
+[    2.610538] Bluetooth: SCO socket layer initialized
+[    2.615723] clocksource: Switched to clocksource arch_sys_counter
+[    2.621531] VFS: Disk quotas dquot_6.6.0
+[    2.625365] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    2.636085] NET: Registered protocol family 2
+[    2.636810] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+[    2.645005] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    2.653030] TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+[    2.660475] TCP: Hash tables configured (established 32768 bind 32768)
+[    2.666650] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    2.673316] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+[    2.680476] NET: Registered protocol family 1
+[    2.684933] RPC: Registered named UNIX socket transport module.
+[    2.690553] RPC: Registered udp transport module.
+[    2.695217] RPC: Registered tcp transport module.
+[    2.699887] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    2.706879] PCI: CLS 0 bytes, default 64
+[    2.710582] hw perfevents: no interrupt-affinity property for /pmu, guessing.
+[    2.717438] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    2.725791] Initialise system trusted keyrings
+[    2.729467] workingset: timestamp_bits=62 max_order=20 bucket_order=0
+[    2.736367] NFS: Registering the id_resolver key type
+[    2.740816] Key type id_resolver registered
+[    2.744955] Key type id_legacy registered
+[    2.748945] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    2.755610] jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[    2.799742] NET: Registered protocol family 38
+[    2.799785] xor: measuring software checksum speed
+[    2.807470]    8regs           :  2363 MB/sec
+[    2.811145]    32regs          :  2799 MB/sec
+[    2.816090]    arm64_neon      :  2380 MB/sec
+[    2.816275] xor: using function: 32regs (2799 MB/sec)
+[    2.821301] Key type asymmetric registered
+[    2.825363] Asymmetric key parser 'x509' registered
+[    2.830223] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[    2.837560] io scheduler mq-deadline registered
+[    2.842057] io scheduler kyber registered
+[    2.871450] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    2.876105] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    2.882414] brd: module loaded
+[    2.886558] loop: module loaded
+[    2.887109] Registered mathworks_ip class
+[    2.890470] libphy: Fixed MDIO Bus: probed
+[    2.893431] tun: Universal TUN/TAP device driver, 1.6
+[    2.897502] CAN device driver interface
+[    2.902039] usbcore: registered new interface driver asix
+[    2.906641] usbcore: registered new interface driver ax88179_178a
+[    2.912673] usbcore: registered new interface driver cdc_ether
+[    2.918462] usbcore: registered new interface driver net1080
+[    2.924085] usbcore: registered new interface driver cdc_subset
+[    2.929968] usbcore: registered new interface driver zaurus
+[    2.935514] usbcore: registered new interface driver cdc_ncm
+[    2.941913] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    2.947598] ehci-pci: EHCI PCI platform driver
+[    2.952394] usbcore: registered new interface driver uas
+[    2.957316] usbcore: registered new interface driver usb-storage
+[    2.963304] usbcore: registered new interface driver usbserial_generic
+[    2.969753] usbserial: USB Serial support registered for generic
+[    2.975730] usbcore: registered new interface driver ftdi_sio
+[    2.981428] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    2.988703] usbcore: registered new interface driver upd78f0730
+[    2.994576] usbserial: USB Serial support registered for upd78f0730
+[    3.002239] rtc_zynqmp ffa60000.rtc: registered as rtc0
+[    3.006002] rtc_zynqmp ffa60000.rtc: setting system clock to 2022-03-26T02:05:59 UTC (1648260359)
+[    3.014864] i2c /dev entries driver
+[    3.020183] usbcore: registered new interface driver uvcvideo
+[    3.023977] USB Video Class driver (1.1.1)
+[    3.029544] Bluetooth: HCI UART driver ver 2.3
+[    3.032459] Bluetooth: HCI UART protocol H4 registered
+[    3.037557] Bluetooth: HCI UART protocol BCSP registered
+[    3.042845] Bluetooth: HCI UART protocol LL registered
+[    3.047935] Bluetooth: HCI UART protocol ATH3K registered
+[    3.053310] Bluetooth: HCI UART protocol Three-wire (H5) registered
+[    3.059563] Bluetooth: HCI UART protocol Intel registered
+[    3.064901] Bluetooth: HCI UART protocol QCA registered
+[    3.070103] usbcore: registered new interface driver bcm203x
+[    3.075731] usbcore: registered new interface driver bpa10x
+[    3.081259] usbcore: registered new interface driver bfusb
+[    3.086710] usbcore: registered new interface driver btusb
+[    3.092176] usbcore: registered new interface driver ath3k
+[    3.097657] EDAC MC: ECC not enabled
+[    3.101281] EDAC DEVICE0: Giving out device to module zynqmp-ocm-edac controller zynqmp_ocm: DEV ff960000.memory-controller (INTERRUPT)
+[    3.113593] sdhci: Secure Digital Host Controller Interface driver
+[    3.119386] sdhci: Copyright(c) Pierre Ossman
+[    3.123713] sdhci-pltfm: SDHCI platform and OF driver helper
+[    3.129761] ledtrig-cpu: registered to indicate activity on CPUs
+[    3.135315] SMCCC: SOC_ID: ARCH_SOC_ID not implemented, skipping ....
+[    3.141747] zynqmp_firmware_probe Platform Management API v1.1
+[    3.147501] zynqmp_firmware_probe Trustzone version v1.0
+[    3.187038] zynqmp-pinctrl firmware:zynqmp-firmware:pinctrl: zynqmp pinctrl initialized
+[    3.234988] zynqmp-aes firmware:zynqmp-firmware:zynqmp-aes: will run requests pump with realtime priority
+[    3.250868] alg: No test for xilinx-keccak-384 (zynqmp-keccak-384)
+[    3.251573] alg: No test for xilinx-zynqmp-rsa (zynqmp-rsa)
+[    3.257084] usbcore: registered new interface driver usbhid
+[    3.262475] usbhid: USB HID core driver
+[    3.273733] axi_sysid 85000000.axi-sysid-0: AXI System ID core version (1.01.a) found
+[    3.276093] axi_sysid 85000000.axi-sysid-0: [ad9081_fmca_ebz] on [zcu102] git branch <master> git <084d44c9780640ca93fd847b1d9ec70dd65f5c67> clean [2022-03-18 04:17:50] UTC
+[    3.291775] fpga_manager fpga0: Xilinx ZynqMP FPGA Manager registered
+[    3.298131] usbcore: registered new interface driver snd-usb-audio
+[    3.305564] pktgen: Packet Generator for packet performance testing. Version: 2.75
+[    3.311768] Initializing XFRM netlink socket
+[    3.315597] NET: Registered protocol family 10
+[    3.320336] Segment Routing with IPv6
+[    3.323690] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    3.329781] NET: Registered protocol family 17
+[    3.333884] NET: Registered protocol family 15
+[    3.338379] can: controller area network core
+[    3.342632] NET: Registered protocol family 29
+[    3.347026] can: raw protocol
+[    3.349960] can: broadcast manager protocol
+[    3.354115] can: netlink gateway - max_hops=1
+[    3.358509] Bluetooth: RFCOMM TTY layer initialized
+[    3.363288] Bluetooth: RFCOMM socket layer initialized
+[    3.368400] Bluetooth: RFCOMM ver 1.11
+[    3.372109] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    3.377379] Bluetooth: BNEP filters: protocol multicast
+[    3.382572] Bluetooth: BNEP socket layer initialized
+[    3.387500] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    3.393383] Bluetooth: HIDP socket layer initialized
+[    3.398437] 9pnet: Installing 9P2000 support
+[    3.402561] NET: Registered protocol family 36
+[    3.406976] Key type dns_resolver registered
+[    3.411416] registered taskstats version 1
+[    3.415273] Loading compiled-in X.509 certificates
+[    3.420388] Btrfs loaded, crc32c=crc32c-generic
+[    3.432786] ff000000.serial: ttyPS0 at MMIO 0xff000000 (irq = 49, base_baud = 6249999) is a xuartps
+[    3.441808] printk: console [ttyPS0] enabled
+[    3.446103] printk: bootconsole [cdns0] disabled
+[    3.455739] ff010000.serial: ttyPS1 at MMIO 0xff010000 (irq = 50, base_baud = 6249999) is a xuartps
+[    3.468967] of-fpga-region fpga-full: FPGA Region probed
+[    3.475928] nwl-pcie fd0e0000.pcie: host bridge /axi/pcie@fd0e0000 ranges:
+[    3.482820] nwl-pcie fd0e0000.pcie:      MEM 0x00e0000000..0x00efffffff -> 0x00e0000000
+[    3.490826] nwl-pcie fd0e0000.pcie:      MEM 0x0600000000..0x07ffffffff -> 0x0600000000
+[    3.498893] nwl-pcie fd0e0000.pcie: Link is DOWN
+[    3.503651] nwl-pcie fd0e0000.pcie: PCI host bridge to bus 0000:00
+[    3.509832] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    3.515313] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xefffffff]
+[    3.522178] pci_bus 0000:00: root bus resource [mem 0x600000000-0x7ffffffff pref]
+[    3.529681] pci 0000:00:00.0: [10ee:d021] type 01 class 0x060400
+[    3.535746] pci 0000:00:00.0: PME# supported from D0 D1 D2 D3hot
+[    3.546181] pci 0000:00:00.0: PCI bridge to [bus 01-0c]
+[    3.552172] xilinx-zynqmp-dma fd500000.dma: ZynqMP DMA driver Probe success
+[    3.559348] xilinx-zynqmp-dma fd510000.dma: ZynqMP DMA driver Probe success
+[    3.566522] xilinx-zynqmp-dma fd520000.dma: ZynqMP DMA driver Probe success
+[    3.573695] xilinx-zynqmp-dma fd530000.dma: ZynqMP DMA driver Probe success
+[    3.580866] xilinx-zynqmp-dma fd540000.dma: ZynqMP DMA driver Probe success
+[    3.588038] xilinx-zynqmp-dma fd550000.dma: ZynqMP DMA driver Probe success
+[    3.595208] xilinx-zynqmp-dma fd560000.dma: ZynqMP DMA driver Probe success
+[    3.602374] xilinx-zynqmp-dma fd570000.dma: ZynqMP DMA driver Probe success
+[    3.609776] xilinx-zynqmp-dpdma fd4c0000.dma-controller: Xilinx DPDMA engine is probed
+[    3.618330] ahci-ceva fd0c0000.ahci: supply ahci not found, using dummy regulator
+[    3.625877] ahci-ceva fd0c0000.ahci: supply phy not found, using dummy regulator
+[    3.715895] hmc7044 spi2.0: PLL1: Acquisition, CLKIN0 @ 122880000 Hz, PFD: 80 kHz - PLL2: Locked @ 2440.000000 MHz
+[    3.726608] jesd204: /axi/spi@ff050000/hmc7044@0,jesd204:1,parent=spi2.0: Using as SYSREF provider
+[    3.736187] spi-nor spi0.0: SPI-NOR-UniqueID 100000235394732200270025081115266e
+[    3.743497] spi-nor spi0.0: found n25q512a, expected m25p80
+[    3.749702] spi-nor spi0.0: trying to lock already unlocked area
+[    3.755707] spi-nor spi0.0: n25q512a (131072 Kbytes)
+[    3.760692] 4 fixed-partitions partitions found on MTD device spi0.0
+[    3.767039] Creating 4 MTD partitions on "spi0.0":
+[    3.771825] 0x000000000000-0x000000100000 : "qspi-fsbl-uboot"
+[    3.778304] 0x000000100000-0x000000600000 : "qspi-linux"
+[    3.784267] 0x000000600000-0x000000620000 : "qspi-device-tree"
+[    3.790738] 0x000000620000-0x000000c00000 : "qspi-rootfs"
+[    3.799201] macb ff0e0000.ethernet: Not enabling partial store and forward
+[    3.806716] libphy: MACB_mii_bus: probed
+[    3.811781] macb ff0e0000.ethernet eth0: Cadence GEM rev 0x50070106 at 0xff0e0000 irq 30 (00:0a:35:04:8e:1b)
+[    3.821994] xilinx-axipmon ffa00000.perf-monitor: Probed Xilinx APM
+[    3.828568] xilinx-axipmon fd0b0000.perf-monitor: Probed Xilinx APM
+[    3.835086] xilinx-axipmon fd490000.perf-monitor: Probed Xilinx APM
+[    3.841631] xilinx-axipmon ffa10000.perf-monitor: Probed Xilinx APM
+[    3.851632] pca953x 0-0020: supply vcc not found, using dummy regulator
+[    3.858313] pca953x 0-0020: using no AI
+[    3.862797] gpio-496 (sel0): hogged as output/low
+[    3.867694] gpio-497 (sel1): hogged as output/high
+[    3.872681] gpio-498 (sel2): hogged as output/high
+[    3.877669] gpio-499 (sel3): hogged as output/high
+[    3.882837] pca953x 0-0021: supply vcc not found, using dummy regulator
+[    3.889506] pca953x 0-0021: using no AI
+[    3.895266] ina2xx 2-0040: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.902299] ina2xx 2-0041: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.909336] ina2xx 2-0042: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.916371] ina2xx 2-0043: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.923394] ina2xx 2-0044: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.930410] ina2xx 2-0045: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.937448] ina2xx 2-0046: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.944512] ina2xx 2-0047: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.951543] ina2xx 2-004a: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.958570] ina2xx 2-004b: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.964978] i2c i2c-0: Added multiplexed i2c bus 2
+[    3.970361] random: fast init done
+[    3.973830] ina2xx 3-0040: power monitor ina226 (Rshunt = 2000 uOhm)
+[    3.980857] ina2xx 3-0041: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.987888] ina2xx 3-0042: power monitor ina226 (Rshunt = 5000 uOhm)
+[    3.994921] ina2xx 3-0043: power monitor ina226 (Rshunt = 5000 uOhm)
+[    4.001950] ina2xx 3-0044: power monitor ina226 (Rshunt = 5000 uOhm)
+[    4.008984] ina2xx 3-0045: power monitor ina226 (Rshunt = 5000 uOhm)
+[    4.016014] ina2xx 3-0046: power monitor ina226 (Rshunt = 5000 uOhm)
+[    4.023055] ina2xx 3-0047: power monitor ina226 (Rshunt = 5000 uOhm)
+[    4.029454] i2c i2c-0: Added multiplexed i2c bus 3
+[    4.084758] i2c i2c-0: Added multiplexed i2c bus 4
+[    4.089700] i2c i2c-0: Added multiplexed i2c bus 5
+[    4.094490] pca954x 0-0075: registered 4 multiplexed busses for I2C mux pca9544
+[    4.101839] cdns-i2c ff020000.i2c: 400 kHz mmio ff020000 irq 32
+[    4.109575] at24 6-0054: supply vcc not found, using dummy regulator
+[    4.116463] at24 6-0054: 1024 byte 24c08 EEPROM, writable, 1 bytes/write
+[    4.123208] i2c i2c-1: Added multiplexed i2c bus 6
+[    4.129636] si5341 7-0036: Chip: 5341 Grade: 1 Rev: 1
+[    4.167346] i2c i2c-1: Added multiplexed i2c bus 7
+[    4.174994] si570 8-005d: registered, current frequency 300000000 Hz
+[    4.181400] i2c i2c-1: Added multiplexed i2c bus 8
+[    4.201188] si570 9-005d: registered, current frequency 148500000 Hz
+[    4.207587] i2c i2c-1: Added multiplexed i2c bus 9
+[    4.212619] si5324 10-0069: si5328 probed
+[    4.280092] si5324 10-0069: si5328 probe successful
+[    4.285027] i2c i2c-1: Added multiplexed i2c bus 10
+[    4.290052] i2c i2c-1: Added multiplexed i2c bus 11
+[    4.295074] i2c i2c-1: Added multiplexed i2c bus 12
+[    4.300101] i2c i2c-1: Added multiplexed i2c bus 13
+[    4.304980] pca954x 1-0074: registered 8 multiplexed busses for I2C switch pca9548
+[    4.313093] at24 14-0050: supply vcc not found, using dummy regulator
+[    4.319883] at24 14-0050: 256 byte 24c02 EEPROM, writable, 1 bytes/write
+[    4.326632] i2c i2c-1: Added multiplexed i2c bus 14
+[    4.331674] i2c i2c-1: Added multiplexed i2c bus 15
+[    4.336707] i2c i2c-1: Added multiplexed i2c bus 16
+[    4.341738] i2c i2c-1: Added multiplexed i2c bus 17
+[    4.346774] i2c i2c-1: Added multiplexed i2c bus 18
+[    4.351822] i2c i2c-1: Added multiplexed i2c bus 19
+[    4.356852] i2c i2c-1: Added multiplexed i2c bus 20
+[    4.361893] i2c i2c-1: Added multiplexed i2c bus 21
+[    4.366772] pca954x 1-0075: registered 8 multiplexed busses for I2C switch pca9548
+[    4.374381] cdns-i2c ff030000.i2c: 400 kHz mmio ff030000 irq 33
+[    4.384131] cdns-wdt fd4d0000.watchdog: Xilinx Watchdog Timer with timeout 60s
+[    4.394921] axi_adxcvr 84a60000.axi-adxcvr-rx: AXI-ADXCVR-RX (17.05.a) using CPLL on GTH4 at 0x84A60000. Number of lanes: 4.
+[    4.407093] axi_adxcvr 84b60000.axi-adxcvr-tx: AXI-ADXCVR-TX (17.05.a) using QPLL on GTH4 at 0x84B60000. Number of lanes: 4.
+[    4.418719] axi-jesd204-rx 84a90000.axi-jesd204-rx: AXI-JESD204-RX (1.07.a) at 0x84A90000. Encoder 8b10b, width 4/4, lanes 4, jesd204-fsm.
+[    4.426231] mmc0: SDHCI controller on ff170000.mmc [ff170000.mmc] using ADMA 64-bit
+[    4.431565] axi-jesd204-tx 84b90000.axi-jesd204-tx: AXI-JESD204-TX (1.06.a) at 0x84B90000. Encoder 8b10b, width 4/4, lanes 4, jesd204-fsm.
+[    4.452292] zynqmp-display fd4a0000.display: vtc bridge property not present
+[    4.461943] xilinx-dp-snd-codec fd4a0000.display:zynqmp_dp_snd_codec0: Failed to get required clock freq
+[    4.471446] xilinx-dp-snd-codec: probe of fd4a0000.display:zynqmp_dp_snd_codec0 failed with error -22
+[    4.473508] mmc0: new high speed SDHC card at address 0001
+[    4.480984] xilinx-dp-snd-pcm zynqmp_dp_snd_pcm0: Xilinx DisplayPort Sound PCM probed
+[    4.486496] mmcblk0: mmc0:0001 EB1QT 29.8 GiB 
+[    4.494307] xilinx-dp-snd-pcm zynqmp_dp_snd_pcm1: Xilinx DisplayPort Sound PCM probed
+[    4.499646]  mmcblk0: p1 p2 p3
+[    4.506604] OF: graph: no port node found in /axi/display@fd4a0000
+[    4.515676] xlnx-drm xlnx-drm.0: bound fd4a0000.display (ops 0xffffffc010fcbdb8)
+[    5.599739] zynqmp-display fd4a0000.display: [drm] Cannot find any crtc or sizes
+[    5.607355] [drm] Initialized xlnx 1.0.0 20130509 for fd4a0000.display on minor 0
+[    5.614846] zynqmp-display fd4a0000.display: ZynqMP DisplayPort Subsystem driver probed
+[    5.623168] ahci-ceva fd0c0000.ahci: supply ahci not found, using dummy regulator
+[    5.630714] ahci-ceva fd0c0000.ahci: supply phy not found, using dummy regulator
+[    5.638166] ahci-ceva fd0c0000.ahci: supply target not found, using dummy regulator
+[    5.646004] ahci-ceva fd0c0000.ahci: AHCI 0001.0301 32 slots 2 ports 6 Gbps 0x3 impl platform mode
+[    5.654961] ahci-ceva fd0c0000.ahci: flags: 64bit ncq sntf pm clo only pmp fbs pio slum part ccc sds apst 
+[    5.665660] scsi host0: ahci-ceva
+[    5.669247] scsi host1: ahci-ceva
+[    5.672670] ata1: SATA max UDMA/133 mmio [mem 0xfd0c0000-0xfd0c1fff] port 0x100 irq 45
+[    5.680583] ata2: SATA max UDMA/133 mmio [mem 0xfd0c0000-0xfd0c1fff] port 0x180 irq 45
+[    5.689201] ad9081 spi1.0: supply vdd not found, using dummy regulator
+[    6.001976] ata1: SATA link down (SStatus 0 SControl 330)
+[    6.007390] ata2: SATA link down (SStatus 0 SControl 330)
+[    6.683743] zynqmp-display fd4a0000.display: [drm] Cannot find any crtc or sizes
+[    7.526327] ad9081 spi1.0: AD9081 Rev. 2 Grade 10 (API 1.2.2) probed
+[    7.533526] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    7.539022] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 1
+[    7.546767] xhci-hcd xhci-hcd.1.auto: hcc params 0x0238f625 hci version 0x100 quirks 0x0000000002010810
+[    7.556192] xhci-hcd xhci-hcd.1.auto: irq 59, io mem 0xfe200000
+[    7.562296] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.10
+[    7.570561] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    7.577778] usb usb1: Product: xHCI Host Controller
+[    7.582646] usb usb1: Manufacturer: Linux 5.10.0-98103-g2aa7ac113716 xhci-hcd
+[    7.589772] usb usb1: SerialNumber: xhci-hcd.1.auto
+[    7.594942] hub 1-0:1.0: USB hub found
+[    7.598709] hub 1-0:1.0: 1 port detected
+[    7.602811] xhci-hcd xhci-hcd.1.auto: xHCI Host Controller
+[    7.608295] xhci-hcd xhci-hcd.1.auto: new USB bus registered, assigned bus number 2
+[    7.615949] xhci-hcd xhci-hcd.1.auto: Host supports USB 3.0 SuperSpeed
+[    7.622566] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.10
+[    7.630824] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    7.638044] usb usb2: Product: xHCI Host Controller
+[    7.642911] usb usb2: Manufacturer: Linux 5.10.0-98103-g2aa7ac113716 xhci-hcd
+[    7.650037] usb usb2: SerialNumber: xhci-hcd.1.auto
+[    7.655151] hub 2-0:1.0: USB hub found
+[    7.658908] hub 2-0:1.0: 1 port detected
+[    7.688941] cf_axi_adc 84a10000.axi-ad9081-rx-hpc: ADI AIM (10.01.b) at 0x84A10000 mapped to 0x(____ptrval____), probed ADC AD9081 as MASTER
+[    7.720563] cf_axi_dds 84b10000.axi-ad9081-tx-hpc: Analog Devices CF_AXI_DDS_DDS MASTER (9.01.b) at 0x84B10000 mapped to 0x(____ptrval____), probed DDS AD9081
+[    7.734761] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition initialized -> probed
+[    7.745282] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition initialized -> probed
+[    7.755806] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition probed -> idle
+[    7.765714] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition probed -> idle
+[    7.775629] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> device_init
+[    7.785973] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> device_init
+[    7.796326] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> link_init
+[    7.807108] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> link_init
+[    7.817899] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> link_supported
+[    7.828938] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> link_supported
+[    7.840340] hmc7044 spi2.0: hmc7044_jesd204_link_pre_setup: Link2 forcing continuous SYSREF mode
+[    7.849513] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_pre_setup
+[    7.860987] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_pre_setup
+[    7.884790] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> clk_sync_stage1
+[    7.896349] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> clk_sync_stage1
+[    7.907920] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage1 -> clk_sync_stage2
+[    7.919566] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage1 -> clk_sync_stage2
+[    7.931218] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage2 -> clk_sync_stage3
+[    7.942863] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage2 -> clk_sync_stage3
+[    7.956535] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage3 -> link_setup
+[    7.967753] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage3 -> link_setup
+[    7.983804] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_setup -> opt_setup_stage1
+[    7.995110] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_setup -> opt_setup_stage1
+[    8.011444] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage1 -> opt_setup_stage2
+[    8.023268] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage1 -> opt_setup_stage2
+[    8.035241] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage2 -> opt_setup_stage3
+[    8.047060] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage2 -> opt_setup_stage3
+[    8.058883] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage3 -> opt_setup_stage4
+[    8.070707] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage3 -> opt_setup_stage4
+[    8.082531] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage4 -> opt_setup_stage5
+[    8.094359] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage4 -> opt_setup_stage5
+[    8.110302] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage5 -> clocks_enable
+[    8.121863] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage5 -> clocks_enable
+[    8.156677] axi_adxcvr 84a60000.axi-adxcvr-rx: adxcvr_clk_enable: CPLL RX buffer underflow error, status: 0x61
+[    8.166667] axi_adxcvr 84a60000.axi-adxcvr-rx: adxcvr_clk_enable: CPLL RX buffer overflow error, status: 0x61
+[    8.176640] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clocks_enable -> link_enable
+[    8.187771] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clocks_enable -> link_enable
+[    8.327725] axi-jesd204-rx 84a90000.axi-jesd204-rx: axi_jesd204_rx_jesd204_link_running: Link2 status failed (CGS)
+[    8.338074] jesd204: /fpga-axi@0/axi-jesd204-rx@84a90000,jesd204:4,parent=84a90000.axi-jesd204-rx: JESD204[2] In link_running got error from cb: -1
+[    8.351284] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: Rolling back from 'link_enable', got error -1
+[    8.361981] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_enable -> link_running
+[    8.373018] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_enable -> link_running
+[    8.384119] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_running -> link_enable
+[    8.395163] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_running -> link_enable
+[    8.410270] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_enable -> clocks_enable
+[    8.421404] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_enable -> clocks_enable
+[    8.432531] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clocks_enable -> opt_setup_stage5
+[    8.444090] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clocks_enable -> opt_setup_stage5
+[    8.455658] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage5 -> opt_setup_stage4
+[    8.467483] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage5 -> opt_setup_stage4
+[    8.479307] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage4 -> opt_setup_stage3
+[    8.491129] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage4 -> opt_setup_stage3
+[    8.502951] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage3 -> opt_setup_stage2
+[    8.514772] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage3 -> opt_setup_stage2
+[    8.526596] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage2 -> opt_setup_stage1
+[    8.538415] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage2 -> opt_setup_stage1
+[    8.550242] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage1 -> link_setup
+[    8.561538] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage1 -> link_setup
+[    8.572843] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_setup -> clk_sync_stage3
+[    8.584058] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_setup -> clk_sync_stage3
+[    8.595272] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage3 -> clk_sync_stage2
+[    8.606918] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage3 -> clk_sync_stage2
+[    8.618570] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage2 -> clk_sync_stage1
+[    8.630215] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage2 -> clk_sync_stage1
+[    8.641866] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage1 -> link_pre_setup
+[    8.653425] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage1 -> link_pre_setup
+[    8.664991] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> link_supported
+[    8.676462] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> link_supported
+[    8.687939] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_init
+[    8.698977] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_init
+[    8.710025] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> device_init
+[    8.720800] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> device_init
+[    8.731582] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> idle
+[    8.741926] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> idle
+[    8.752277] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> idle
+[    8.762012] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> idle
+[    8.771753] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> device_init
+[    8.782097] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> device_init
+[    8.792447] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> link_init
+[    8.803224] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> link_init
+[    8.814013] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> link_supported
+[    8.825056] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> link_supported
+[    8.836386] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_pre_setup
+[    8.847860] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_pre_setup
+[    8.871630] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> clk_sync_stage1
+[    8.883195] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> clk_sync_stage1
+[    8.894759] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage1 -> clk_sync_stage2
+[    8.906403] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage1 -> clk_sync_stage2
+[    8.918055] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage2 -> clk_sync_stage3
+[    8.929705] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage2 -> clk_sync_stage3
+[    8.943421] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage3 -> link_setup
+[    8.954630] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage3 -> link_setup
+[    8.970600] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_setup -> opt_setup_stage1
+[    8.981904] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_setup -> opt_setup_stage1
+[    8.998229] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage1 -> opt_setup_stage2
+[    9.010055] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage1 -> opt_setup_stage2
+[    9.022024] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage2 -> opt_setup_stage3
+[    9.033846] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage2 -> opt_setup_stage3
+[    9.045669] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage3 -> opt_setup_stage4
+[    9.057487] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage3 -> opt_setup_stage4
+[    9.069317] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage4 -> opt_setup_stage5
+[    9.081141] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage4 -> opt_setup_stage5
+[    9.097110] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage5 -> clocks_enable
+[    9.108676] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage5 -> clocks_enable
+[    9.143484] axi_adxcvr 84a60000.axi-adxcvr-rx: adxcvr_clk_enable: CPLL RX buffer underflow error, status: 0x61
+[    9.153470] axi_adxcvr 84a60000.axi-adxcvr-rx: adxcvr_clk_enable: CPLL RX buffer overflow error, status: 0x61
+[    9.163438] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clocks_enable -> link_enable
+[    9.174566] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clocks_enable -> link_enable
+[    9.315722] axi-jesd204-rx 84a90000.axi-jesd204-rx: axi_jesd204_rx_jesd204_link_running: Link2 status failed (CGS)
+[    9.326066] jesd204: /fpga-axi@0/axi-jesd204-rx@84a90000,jesd204:4,parent=84a90000.axi-jesd204-rx: JESD204[2] In link_running got error from cb: -1
+[    9.339276] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: Rolling back from 'link_enable', got error -1
+[    9.349972] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_enable -> link_running
+[    9.361010] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_enable -> link_running
+[    9.372109] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_running -> link_enable
+[    9.383146] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_running -> link_enable
+[    9.398242] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_enable -> clocks_enable
+[    9.409370] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_enable -> clocks_enable
+[    9.420497] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clocks_enable -> opt_setup_stage5
+[    9.432056] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clocks_enable -> opt_setup_stage5
+[    9.443624] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage5 -> opt_setup_stage4
+[    9.455441] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage5 -> opt_setup_stage4
+[    9.467265] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage4 -> opt_setup_stage3
+[    9.479084] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage4 -> opt_setup_stage3
+[    9.490910] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage3 -> opt_setup_stage2
+[    9.502728] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage3 -> opt_setup_stage2
+[    9.514553] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage2 -> opt_setup_stage1
+[    9.526372] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage2 -> opt_setup_stage1
+[    9.538200] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage1 -> link_setup
+[    9.549496] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage1 -> link_setup
+[    9.560801] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_setup -> clk_sync_stage3
+[    9.572016] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_setup -> clk_sync_stage3
+[    9.583230] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage3 -> clk_sync_stage2
+[    9.594875] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage3 -> clk_sync_stage2
+[    9.606526] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage2 -> clk_sync_stage1
+[    9.618174] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage2 -> clk_sync_stage1
+[    9.629824] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage1 -> link_pre_setup
+[    9.641383] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage1 -> link_pre_setup
+[    9.652946] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> link_supported
+[    9.664420] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> link_supported
+[    9.675898] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_init
+[    9.686935] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_init
+[    9.697985] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> device_init
+[    9.708766] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> device_init
+[    9.719549] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> idle
+[    9.729892] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> idle
+[    9.740243] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> idle
+[    9.749978] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> idle
+[    9.759723] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> device_init
+[    9.770064] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> device_init
+[    9.780413] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> link_init
+[    9.791191] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> link_init
+[    9.801979] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> link_supported
+[    9.813021] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> link_supported
+[    9.824350] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_pre_setup
+[    9.835826] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_pre_setup
+[    9.859664] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> clk_sync_stage1
+[    9.871223] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> clk_sync_stage1
+[    9.882786] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage1 -> clk_sync_stage2
+[    9.894431] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage1 -> clk_sync_stage2
+[    9.906082] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage2 -> clk_sync_stage3
+[    9.917727] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage2 -> clk_sync_stage3
+[    9.931393] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage3 -> link_setup
+[    9.942606] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage3 -> link_setup
+[    9.958587] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_setup -> opt_setup_stage1
+[    9.969888] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_setup -> opt_setup_stage1
+[    9.986214] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage1 -> opt_setup_stage2
+[    9.998038] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage1 -> opt_setup_stage2
+[   10.010009] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage2 -> opt_setup_stage3
+[   10.021829] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage2 -> opt_setup_stage3
+[   10.033652] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage3 -> opt_setup_stage4
+[   10.045472] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage3 -> opt_setup_stage4
+[   10.057299] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage4 -> opt_setup_stage5
+[   10.069115] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage4 -> opt_setup_stage5
+[   10.085065] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage5 -> clocks_enable
+[   10.096625] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage5 -> clocks_enable
+[   10.131439] axi_adxcvr 84a60000.axi-adxcvr-rx: adxcvr_clk_enable: CPLL RX buffer underflow error, status: 0x61
+[   10.141427] axi_adxcvr 84a60000.axi-adxcvr-rx: adxcvr_clk_enable: CPLL RX buffer overflow error, status: 0x61
+[   10.151396] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clocks_enable -> link_enable
+[   10.162523] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clocks_enable -> link_enable
+[   10.303724] axi-jesd204-rx 84a90000.axi-jesd204-rx: axi_jesd204_rx_jesd204_link_running: Link2 status failed (CGS)
+[   10.314067] jesd204: /fpga-axi@0/axi-jesd204-rx@84a90000,jesd204:4,parent=84a90000.axi-jesd204-rx: JESD204[2] In link_running got error from cb: -1
+[   10.327278] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: Rolling back from 'link_enable', got error -1
+[   10.337973] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_enable -> link_running
+[   10.349011] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_enable -> link_running
+[   10.360109] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_running -> link_enable
+[   10.371147] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_running -> link_enable
+[   10.386240] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_enable -> clocks_enable
+[   10.397371] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_enable -> clocks_enable
+[   10.408499] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clocks_enable -> opt_setup_stage5
+[   10.420057] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clocks_enable -> opt_setup_stage5
+[   10.431625] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage5 -> opt_setup_stage4
+[   10.443450] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage5 -> opt_setup_stage4
+[   10.455274] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage4 -> opt_setup_stage3
+[   10.467094] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage4 -> opt_setup_stage3
+[   10.478919] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage3 -> opt_setup_stage2
+[   10.490739] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage3 -> opt_setup_stage2
+[   10.502563] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage2 -> opt_setup_stage1
+[   10.514382] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage2 -> opt_setup_stage1
+[   10.526210] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage1 -> link_setup
+[   10.537509] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage1 -> link_setup
+[   10.548810] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_setup -> clk_sync_stage3
+[   10.560025] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_setup -> clk_sync_stage3
+[   10.571240] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage3 -> clk_sync_stage2
+[   10.582886] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage3 -> clk_sync_stage2
+[   10.594537] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage2 -> clk_sync_stage1
+[   10.606182] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage2 -> clk_sync_stage1
+[   10.617836] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage1 -> link_pre_setup
+[   10.629392] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage1 -> link_pre_setup
+[   10.640957] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> link_supported
+[   10.652430] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> link_supported
+[   10.663907] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_init
+[   10.674945] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_init
+[   10.685992] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> device_init
+[   10.696767] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> device_init
+[   10.707549] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> idle
+[   10.717893] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> idle
+[   10.728245] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> idle
+[   10.737979] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> idle
+[   10.747723] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition idle -> device_init
+[   10.758064] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition idle -> device_init
+[   10.768414] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> link_init
+[   10.779192] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> link_init
+[   10.789980] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> link_supported
+[   10.801023] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> link_supported
+[   10.812351] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_pre_setup
+[   10.823829] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_pre_setup
+[   10.847671] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> clk_sync_stage1
+[   10.859232] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> clk_sync_stage1
+[   10.870796] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage1 -> clk_sync_stage2
+[   10.882440] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage1 -> clk_sync_stage2
+[   10.894091] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage2 -> clk_sync_stage3
+[   10.905740] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage2 -> clk_sync_stage3
+[   10.919401] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage3 -> link_setup
+[   10.930615] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage3 -> link_setup
+[   10.946542] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_setup -> opt_setup_stage1
+[   10.957846] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_setup -> opt_setup_stage1
+[   10.974163] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage1 -> opt_setup_stage2
+[   10.985987] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage1 -> opt_setup_stage2
+[   10.997957] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage2 -> opt_setup_stage3
+[   11.009777] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage2 -> opt_setup_stage3
+[   11.021601] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage3 -> opt_setup_stage4
+[   11.033420] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage3 -> opt_setup_stage4
+[   11.045249] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage4 -> opt_setup_stage5
+[   11.057073] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage4 -> opt_setup_stage5
+[   11.073021] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage5 -> clocks_enable
+[   11.084582] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage5 -> clocks_enable
+[   11.119394] axi_adxcvr 84a60000.axi-adxcvr-rx: adxcvr_clk_enable: CPLL RX buffer underflow error, status: 0x61
+[   11.129385] axi_adxcvr 84a60000.axi-adxcvr-rx: adxcvr_clk_enable: CPLL RX buffer overflow error, status: 0x61
+[   11.139353] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clocks_enable -> link_enable
+[   11.150482] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clocks_enable -> link_enable
+[   11.291725] axi-jesd204-rx 84a90000.axi-jesd204-rx: axi_jesd204_rx_jesd204_link_running: Link2 status failed (CGS)
+[   11.302068] jesd204: /fpga-axi@0/axi-jesd204-rx@84a90000,jesd204:4,parent=84a90000.axi-jesd204-rx: JESD204[2] In link_running got error from cb: -1
+[   11.315278] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: Rolling back from 'link_enable', got error -1
+[   11.325974] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_enable -> link_running
+[   11.337012] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_enable -> link_running
+[   11.348110] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_running -> link_enable
+[   11.359148] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_running -> link_enable
+[   11.374300] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_enable -> clocks_enable
+[   11.385433] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_enable -> clocks_enable
+[   11.396560] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clocks_enable -> opt_setup_stage5
+[   11.408118] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clocks_enable -> opt_setup_stage5
+[   11.419687] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage5 -> opt_setup_stage4
+[   11.431512] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage5 -> opt_setup_stage4
+[   11.443336] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage4 -> opt_setup_stage3
+[   11.455155] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage4 -> opt_setup_stage3
+[   11.466980] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage3 -> opt_setup_stage2
+[   11.478800] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage3 -> opt_setup_stage2
+[   11.490624] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage2 -> opt_setup_stage1
+[   11.502444] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage2 -> opt_setup_stage1
+[   11.514272] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition opt_setup_stage1 -> link_setup
+[   11.525567] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition opt_setup_stage1 -> link_setup
+[   11.536872] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_setup -> clk_sync_stage3
+[   11.548088] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_setup -> clk_sync_stage3
+[   11.559301] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage3 -> clk_sync_stage2
+[   11.570947] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage3 -> clk_sync_stage2
+[   11.582598] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage2 -> clk_sync_stage1
+[   11.594243] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage2 -> clk_sync_stage1
+[   11.605895] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition clk_sync_stage1 -> link_pre_setup
+[   11.617454] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition clk_sync_stage1 -> link_pre_setup
+[   11.629019] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_pre_setup -> link_supported
+[   11.640491] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_pre_setup -> link_supported
+[   11.651968] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_supported -> link_init
+[   11.663007] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_supported -> link_init
+[   11.674054] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition link_init -> device_init
+[   11.684831] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition link_init -> device_init
+[   11.695612] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[0] transition device_init -> idle
+[   11.705955] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: JESD204[2] transition device_init -> idle
+[   11.716301] jesd204: /axi/spi@ff040000/ad9081@0,jesd204:0,parent=spi1.0: FSM completed with error -1
+[   11.734694] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[   11.741724] of_cfs_init
+[   11.744188] of_cfs_init: OK
+[   11.747115] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   11.885199] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   11.891727] clk: Not disabling unused clocks
+[   11.896262] ALSA device list:
+[   11.899212]   No soundcards found.
+[   11.902881] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[   11.911492] cfg80211: failed to load regulatory.db
+[   11.926731] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[   11.934846] VFS: Mounted root (ext4 filesystem) on device 179:2.
+[   11.947934] devtmpfs: mounted
+[   11.951767] Freeing unused kernel memory: 2560K
+[   11.967778] Run /sbin/init as init process
+[   11.971873]   with arguments:
+[   11.971876]     /sbin/init
+[   11.971878]   with environment:
+[   11.971881]     HOME=/
+[   11.971883]     TERM=linux
+[   12.540573] systemd[1]: systemd 241 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[   12.562431] systemd[1]: Detected architecture arm64.
+[   12.584434] systemd[1]: Set hostname to <analog>.
+[   12.781010] systemd[1]: File /lib/systemd/system/systemd-journald.service:12 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgroup based firewalling.
+[   12.798057] systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+[   12.961584] systemd[1]: /etc/systemd/system/tof-server.service:1: Assignment outside of section. Ignoring.
+[   12.971279] systemd[1]: /etc/systemd/system/tof-server.service:2: Assignment outside of section. Ignoring.
+[   13.154584] random: systemd: uninitialized urandom read (16 bytes read)
+[   13.169308] random: systemd: uninitialized urandom read (16 bytes read)
+[   13.176244] systemd[1]: Listening on Syslog Socket.
+[   13.191850] random: systemd: uninitialized urandom read (16 bytes read)
+[   13.199043] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[   13.220154] systemd[1]: Listening on Journal Socket.
+[   13.812122] ------------[ cut here ]------------
+[   13.812130] Enabling unprepared \xa0\xb9P\x88\xff\xff\xff@P\x88\xff\xff\xff
+[   13.812176] WARNING: CPU: 1 PID: 130 at drivers/clk/clk.c:1012 clk_core_enable+0xa4/0xc0
+[   13.812180] Modules linked in:
+[   13.812190] CPU: 1 PID: 130 Comm: kworker/1:1H Not tainted 5.10.0-98103-g2aa7ac113716 #5577
+[   13.812193] Hardware name: ZynqMP ZCU102 Rev1.0 (DT)
+[   13.812203] Workqueue: kblockd blk_mq_run_work_fn
+[   13.812210] pstate: 80000085 (Nzcv daIf -PAN -UAO -TCO BTYPE=--)
+[   13.812216] pc : clk_core_enable+0xa4/0xc0
+[   13.812222] lr : clk_core_enable+0xa4/0xc0
+[   13.812224] sp : ffffffc012b532d0
+[   13.812227] x29: ffffffc012b532d0 x28: ffffff8800330c10 
+[   13.812234] x27: ffffff8800330d48 x26: 0000005000000101 
+[   13.812241] x25: 000000033152bc3a x24: 0000000000000001 
+[   13.812248] x23: ffffff88010d3800 x22: ffffff8801043220 
+[   13.812254] x21: ffffff8801504000 x20: ffffff8801504008 
+[   13.812261] x19: ffffff8801504008 x18: 0000000000000030 
+[   13.812268] x17: 0000000000000001 x16: 0000b627e4fb3d82 
+[   13.812274] x15: fffffffffffffdb8 x14: ffffffc011d3b1a0 
+[   13.812281] x13: ffffffc011d3b1c8 x12: 00000000000008ca 
+[   13.812287] x11: 00000000000002ee x10: ffffffc011d671c8 
+[   13.812294] x9 : 00000000fffff800 x8 : ffffffc011d3b1c8 
+[   13.812300] x7 : ffffffc011d671c8 x6 : 0000000000000001 
+[   13.812307] x5 : ffffff887f77c9e0 x4 : 0000000000000000 
+[   13.812313] x3 : 0000000000000027 x2 : 0000000000000023 
+[   13.812320] x1 : ebfb4b2ebabac200 x0 : 0000000000000000 
+[   13.812327] Call trace:
+[   13.812333]  clk_core_enable+0xa4/0xc0
+[   13.812338]  clk_enable+0x2c/0x60
+[   13.812344]  zynqmp_runtime_resume+0x24/0x84
+[   13.812351]  pm_generic_runtime_resume+0x30/0x50
+[   13.812357]  __genpd_runtime_resume+0x30/0xb0
+[   13.812363]  genpd_runtime_resume+0x90/0x250
+[   13.812369]  __rpm_callback+0x10c/0x1e0
+[   13.812374]  rpm_callback+0x5c/0x84
+[   13.812379]  rpm_resume+0x4a4/0x74c
+[   13.812384]  __pm_runtime_resume+0x78/0xc4
+[   13.812389]  spi_mem_access_start.isra.0+0x30/0x80
+[   13.812393]  spi_mem_exec_op+0x3b0/0x424
+[   13.812398]  spi_nor_read_sr+0x78/0xe0
+[   13.812404]  spi_nor_wait_till_ready_with_timeout+0xb4/0x2f0
+[   13.812408]  spi_nor_read+0x188/0x380
+[   13.812413]  mtd_read_oob_std+0x78/0x84
+[   13.812418]  mtd_read_oob+0x7c/0x134
+[   13.812423]  mtd_read+0x48/0x7c
+[   13.812428]  mtdblock_readsect+0x6c/0x150
+[   13.812433]  mtd_queue_rq+0x2cc/0x5a0
+[   13.812439]  blk_mq_dispatch_rq_list+0x110/0x790
+[   13.812445]  __blk_mq_do_dispatch_sched+0x200/0x274
+[   13.812451]  __blk_mq_sched_dispatch_requests+0x1a8/0x1fc
+[   13.812457]  blk_mq_sched_dispatch_requests+0x3c/0x7c
+[   13.812462]  __blk_mq_run_hw_queue+0x98/0x100
+[   13.812466]  blk_mq_run_work_fn+0x24/0x30
+[   13.812472]  process_one_work+0x1d4/0x380
+[   13.812476]  worker_thread+0x78/0x4e0
+[   13.812481]  kthread+0x124/0x130
+[   13.812487]  ret_from_fork+0x10/0x3c
+[   13.812490] ---[ end trace eb2db1baf5844200 ]---
+[   13.812498] zynqmp-qspi ff0f0000.spi: Cannot enable APB clock.
+[   13.812548] spi_master spi0: Failed to power device: -108
+[   13.812558] blk_update_request: I/O error, dev mtdblock0, sector 8 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   13.812637] spi_master spi0: Failed to power device: -22
+[   13.812644] blk_update_request: I/O error, dev mtdblock0, sector 8 op 0x0:(READ) flags 0x0 phys_seg 8 prio class 0
+[   13.812651] Buffer I/O error on dev mtdblock0, logical block 8, async page read
+[   13.812660] spi_master spi0: Failed to power device: -22
+[   13.812666] blk_update_request: I/O error, dev mtdblock0, sector 9 op 0x0:(READ) flags 0x0 phys_seg 7 prio class 0
+[   13.812671] Buffer I/O error on dev mtdblock0, logical block 9, async page read
+[   13.812678] spi_master spi0: Failed to power device: -22
+[   13.812684] blk_update_request: I/O error, dev mtdblock0, sector 10 op 0x0:(READ) flags 0x0 phys_seg 6 prio class 0
+[   13.812701] Buffer I/O error on dev mtdblock0, logical block 10, async page read
+[   13.812708] spi_master spi0: Failed to power device: -22
+[   13.812714] blk_update_request: I/O error, dev mtdblock0, sector 11 op 0x0:(READ) flags 0x0 phys_seg 5 prio class 0
+[   13.812718] Buffer I/O error on dev mtdblock0, logical block 11, async page read
+[   13.812725] spi_master spi0: Failed to power device: -22
+[   13.812731] blk_update_request: I/O error, dev mtdblock0, sector 12 op 0x0:(READ) flags 0x0 phys_seg 4 prio class 0
+[   13.812734] Buffer I/O error on dev mtdblock0, logical block 12, async page read
+[   13.812741] spi_master spi0: Failed to power device: -22
+[   13.812747] blk_update_request: I/O error, dev mtdblock0, sector 13 op 0x0:(READ) flags 0x0 phys_seg 3 prio class 0
+[   13.812751] Buffer I/O error on dev mtdblock0, logical block 13, async page read
+[   13.812758] spi_master spi0: Failed to power device: -22
+[   13.812764] blk_update_request: I/O error, dev mtdblock0, sector 14 op 0x0:(READ) flags 0x0 phys_seg 2 prio class 0
+[   13.812768] Buffer I/O error on dev mtdblock0, logical block 14, async page read
+[   13.812774] spi_master spi0: Failed to power device: -22
+[   13.812780] blk_update_request: I/O error, dev mtdblock0, sector 15 op 0x0:(READ) flags 0x0 phys_seg 1 prio class 0
+[   13.812784] Buffer I/O error on dev mtdblock0, logical block 15, async page read
+[   13.813139] spi_master spi0: Failed to power device: -22
+[   13.813147] blk_update_request: I/O error, dev mtdblock1, sector 10112 op 0x0:(READ) flags 0x80700 phys_seg 1 prio class 0
+[   13.813190] spi_master spi0: Failed to power device: -22
+[   13.813197] Buffer I/O error on dev mtdblock1, logical block 10112, async page read
+[   13.813205] spi_master spi0: Failed to power device: -22
+[   13.813210] Buffer I/O error on dev mtdblock1, logical block 10113, async page read
+[   13.813217] spi_master spi0: Failed to power device: -22
+[   13.813224] spi_master spi0: Failed to power device: -22
+[   13.813232] spi_master spi0: Failed to power device: -22
+[   13.813239] spi_master spi0: Failed to power device: -22
+[   13.813247] spi_master spi0: Failed to power device: -22
+[   13.813254] spi_master spi0: Failed to power device: -22
+[   13.813485] spi_master spi0: Failed to power device: -22
+[   13.813529] spi_master spi0: Failed to power device: -22
+[   13.813539] spi_master spi0: Failed to power device: -22
+[   13.813546] spi_master spi0: Failed to power device: -22
+[   13.813554] spi_master spi0: Failed to power device: -22
+[   13.813561] spi_master spi0: Failed to power device: -22
+[   13.813569] spi_master spi0: Failed to power device: -22
+[   13.813576] spi_master spi0: Failed to power device: -22
+[   13.813583] spi_master spi0: Failed to power device: -22
+[   13.813850] spi_master spi0: Failed to power device: -22
+[   13.813894] spi_master spi0: Failed to power device: -22
+[   13.813903] spi_master spi0: Failed to power device: -22
+[   13.813912] spi_master spi0: Failed to power device: -22
+[   13.813919] spi_master spi0: Failed to power device: -22
+[   13.813927] spi_master spi0: Failed to power device: -22
+[   13.813934] spi_master spi0: Failed to power device: -22
+[   13.813942] spi_master spi0: Failed to power device: -22
+[   13.813949] spi_master spi0: Failed to power device: -22
+[   13.937821] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+[   14.148491] systemd-journald[168]: Received request to flush runtime journal from PID 1
+[   20.018530] macb ff0e0000.ethernet eth0: PHY [ff0e0000.ethernet-ffffffff:0c] driver [TI DP83867] (irq=POLL)
+[   20.018543] macb ff0e0000.ethernet eth0: configuring for phy/rgmii-id link mode
+[   21.231744] Adding 80892k swap on /var/swap.  Priority:-2 extents:1 across:80892k SS
+[   22.011746] random: crng init done
+[   22.011755] random: 7 urandom warning(s) missed due to ratelimiting
+[   24.097371] macb ff0e0000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
+[   24.097398] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   24.322320] broken atomic modeset userspace detected, disabling atomic
+[   27.009488] broken atomic modeset userspace detected, disabling atomic
+[   29.978426] broken atomic modeset userspace detected, disabling atomic
