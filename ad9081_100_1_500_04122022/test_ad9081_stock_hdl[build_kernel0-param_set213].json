@@ -1,0 +1,363 @@
+{
+    "param_set": {
+        "DAC_freq": 5008000000,
+        "ADC_freq": 2504000000,
+        "fddc": 4,
+        "cddc": 2,
+        "fduc": 8,
+        "cduc": 2
+    },
+    "status": "failed",
+    "cfg": {
+        "clock": {
+            "r2": 384,
+            "n2": 7825,
+            "out_dividers": [
+                1,
+                256,
+                256,
+                4,
+                4
+            ],
+            "output_clocks": {
+                "AD9081_ref_clk": {
+                    "rate": 2504000000.0,
+                    "divider": 1
+                },
+                "adc_sysref": {
+                    "rate": 9781250.0,
+                    "divider": 256
+                },
+                "dac_sysref": {
+                    "rate": 9781250.0,
+                    "divider": 256
+                },
+                "adc_fpga_ref_clk": {
+                    "rate": 626000000.0,
+                    "divider": 4
+                },
+                "dac_fpga_ref_clk": {
+                    "rate": 626000000.0,
+                    "divider": 4
+                }
+            },
+            "vco": 2504000000,
+            "vcxo": 122880000,
+            "vcxo_doubler": 1
+        },
+        "converter": {
+            "clocking_option": "integrated_pll",
+            "pll_config": {
+                "m_vco": 8,
+                "n_vco": 2,
+                "r": 4,
+                "d": 2
+            },
+            "jesd": {
+                "bit_clock": 12520000000.0,
+                "multiframe_clock": 9781250.0,
+                "sample_clock": 313000000,
+                "F": 4,
+                "HD": 0,
+                "K": 32,
+                "L": 4,
+                "M": 8,
+                "Np": 16,
+                "S": 1,
+                "CS": 0,
+                "jesd_class": "jesd204b",
+                "converter_clock": 2504000000,
+                "jesd_mode": "10",
+                "jesd_class_int": 1
+            },
+            "datapath": {
+                "cddc": {
+                    "enabled": [
+                        true,
+                        true,
+                        true,
+                        true
+                    ],
+                    "decimations": [
+                        2,
+                        2,
+                        2,
+                        2
+                    ],
+                    "nco_frequencies": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "nco_phases": [
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "fddc": {
+                    "enabled": [
+                        true,
+                        true,
+                        false,
+                        false,
+                        true,
+                        true,
+                        false,
+                        false
+                    ],
+                    "decimations": [
+                        4,
+                        4,
+                        4,
+                        4,
+                        4,
+                        4,
+                        4,
+                        4
+                    ],
+                    "nco_frequencies": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "nco_phases": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "source": [
+                        1,
+                        1,
+                        2,
+                        2,
+                        3,
+                        3,
+                        4,
+                        4
+                    ]
+                }
+            }
+        },
+        "fpga_adc": {
+            "type": "qpll",
+            "m": 1,
+            "d": 1,
+            "n": 20,
+            "band": 0,
+            "vco": 12520000000.0,
+            "qty4_full_rate_enabled": 1,
+            "sys_clk_select": "XCVR_QPLL",
+            "progdiv": 40.0,
+            "out_clk_select": "XCVR_PROGDIV_CLK"
+        },
+        "jesd_adc": {
+            "bit_clock": 12520000000.0,
+            "multiframe_clock": 9781250.0,
+            "sample_clock": 313000000,
+            "F": 4,
+            "HD": 0,
+            "K": 32,
+            "L": 4,
+            "M": 8,
+            "Np": 16,
+            "S": 1,
+            "CS": 0,
+            "jesd_class": "jesd204b",
+            "converter_clock": 2504000000,
+            "jesd_mode": "10",
+            "jesd_class_int": 1
+        },
+        "datapath_adc": {
+            "cddc": {
+                "enabled": [
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                "decimations": [
+                    2,
+                    2,
+                    2,
+                    2
+                ],
+                "nco_frequencies": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "nco_phases": [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            "fddc": {
+                "enabled": [
+                    true,
+                    true,
+                    false,
+                    false,
+                    true,
+                    true,
+                    false,
+                    false
+                ],
+                "decimations": [
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4,
+                    4
+                ],
+                "nco_frequencies": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "nco_phases": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "source": [
+                    1,
+                    1,
+                    2,
+                    2,
+                    3,
+                    3,
+                    4,
+                    4
+                ]
+            }
+        },
+        "fpga_dac": {
+            "type": "qpll",
+            "m": 1,
+            "d": 1,
+            "n": 20,
+            "band": 0,
+            "vco": 12520000000.0,
+            "qty4_full_rate_enabled": 1,
+            "sys_clk_select": "XCVR_QPLL",
+            "out_clk_select": "XCVR_REFCLK_DIV2"
+        },
+        "jesd_dac": {
+            "bit_clock": 12520000000.0,
+            "multiframe_clock": 9781250.0,
+            "sample_clock": 313000000,
+            "F": 4,
+            "HD": 0,
+            "K": 32,
+            "L": 4,
+            "M": 8,
+            "Np": 16,
+            "S": 1,
+            "CS": 0,
+            "jesd_class": "jesd204b",
+            "converter_clock": 5008000000,
+            "jesd_mode": "9",
+            "jesd_class_int": 1
+        },
+        "datapath_dac": {
+            "cduc": {
+                "enabled": [
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                "interpolation": 2,
+                "nco_frequencies": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "nco_phases": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "sources": [
+                    [
+                        1
+                    ],
+                    [
+                        1
+                    ],
+                    [
+                        3
+                    ],
+                    [
+                        3
+                    ]
+                ]
+            },
+            "fduc": {
+                "enabled": [
+                    true,
+                    true,
+                    true,
+                    true
+                ],
+                "interpolation": 8,
+                "nco_frequencies": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "nco_phases": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        }
+    },
+    "found_devices": [
+        "ams",
+        "hmc7044",
+        null
+    ]
+}
